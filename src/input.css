@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+    --font-display: 'DM Serif Display', serif;
+    --font-body: 'Fira Sans', sans-serif;
+
+    --color-lole-navy: #06162F;
+    --color-lole-deep: #0C2448;
+    --color-lole-gold: #E5BF85;
+    --color-lole-gold-warm: #EFAD4D;
+    --color-lole-bronze: #C79E75;
+    --color-lole-cream: #F4F1EA;
+    --color-lole-gray: #696E75;
+
+
+}
