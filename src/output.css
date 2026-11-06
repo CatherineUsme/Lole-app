@@ -8,14 +8,14 @@
       "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-amber-600: oklch(66.6% 0.179 58.318);
-    --color-amber-800: oklch(47.3% 0.137 46.201);
-    --color-blue-600: oklch(54.6% 0.245 262.881);
-    --text-3xl: 1.875rem;
-    --text-3xl--line-height: calc(2.25 / 1.875);
-    --font-weight-bold: 700;
+    --spacing: 0.25rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --font-display: 'DM Serif Display', serif;
+    --font-body: 'Fira Sans', sans-serif;
+    --color-lole-noche: #06162F;
+    --color-lole-bronce: #C79E75;
+    --color-lole-blanco: #F4F1EA;
   }
 }
 @layer base {
@@ -167,6 +167,27 @@
   }
 }
 @layer utilities {
+  .container {
+    width: 100%;
+    @media (width >= 40rem) {
+      max-width: 40rem;
+    }
+    @media (width >= 48rem) {
+      max-width: 48rem;
+    }
+    @media (width >= 64rem) {
+      max-width: 64rem;
+    }
+    @media (width >= 80rem) {
+      max-width: 80rem;
+    }
+    @media (width >= 96rem) {
+      max-width: 96rem;
+    }
+  }
+  .grid {
+    display: grid;
+  }
   .table {
     display: table;
   }
@@ -180,22 +201,26 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .text-3xl {
-    font-size: var(--text-3xl);
-    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  .bg-lole-noche {
+    background-color: var(--color-lole-noche);
   }
-  .font-bold {
-    --tw-font-weight: var(--font-weight-bold);
-    font-weight: var(--font-weight-bold);
+  .px-6 {
+    padding-inline: calc(var(--spacing) * 6);
   }
-  .text-amber-600 {
-    color: var(--color-amber-600);
+  .py-16 {
+    padding-block: calc(var(--spacing) * 16);
   }
-  .text-amber-800 {
-    color: var(--color-amber-800);
+  .font-body {
+    font-family: var(--font-body);
   }
-  .text-blue-600 {
-    color: var(--color-blue-600);
+  .font-display {
+    font-family: var(--font-display);
+  }
+  .text-lole-blanco {
+    color: var(--color-lole-blanco);
+  }
+  .text-lole-bronce {
+    color: var(--color-lole-bronce);
   }
   .underline {
     text-decoration-line: underline;
@@ -210,10 +235,6 @@
   inherits: false;
   initial-value: solid;
 }
-@property --tw-font-weight {
-  syntax: "*";
-  inherits: false;
-}
 @property --tw-outline-style {
   syntax: "*";
   inherits: false;
@@ -223,7 +244,6 @@
   @supports ((-webkit-hyphens: none) and (not (margin-trim: block))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
-      --tw-font-weight: initial;
       --tw-outline-style: solid;
     }
   }

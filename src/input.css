@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+@theme {
+    --font-display: 'DM Serif Display', serif;
+    --font-body: 'Fira Sans', sans-serif;
+
+    /* Colores principales */
+    --color-lole-noche: #06162F;
+    --color-lole-profundo: #0C2448;
+
+    /* Dorados */
+    --color-lole-champagne: #E5BF85;
+    --color-lole-dorado: #EFAD4D;
+    --color-lole-bronce: #C79E75;
+
+    /* Colores neutros */
+    --color-lole-blanco: #F4F1EA;
+    --color-lole-gris: #696E75;
+}
