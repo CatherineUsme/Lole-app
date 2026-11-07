@@ -88,99 +88,369 @@
                 </div>
             </div>
         </section>
-        <section class="bg-lole-noche text-lole-blanco px-6 py-16>
-            <header class="mb-0">
-                <span class="font-body text-lole-bronce"> MEJOR PUNTUADAS ESTA SEMANA </span>
-                <h2 class="font-display text-4xl font-bold mt-4 text-left max-w-xl text-lole-champagne">LAS FAVORITAS DEL CENTRO</h2>
-            </header>
-            <div>
-                <a href="#comparartiendas" class="font-body text-lole-champagne hover:text-lole-bronce">Comparar tiendas</a>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-lole-bronce">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-                </svg>
+
+        
+        
+        <section id="tiendas-favoritas" class="bg-lole-noche text-lole-blanco px-6 py-16">
+
+            <div class="w-full max-w-7xl mx-auto">
+
+                <!-- ENCABEZADO DE LA SECCIÓN -->
+                <header class="mb-8">
+
+                    <span class="font-body text-lole-bronce text-sm font-semibold tracking-widest">
+                        MEJOR PUNTUADAS ESTA SEMANA
+                    </span>
+
+                    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
+
+                        <h2 class="font-display text-4xl font-bold mt-4 text-lole-champagne">
+                            Las favoritas del centro
+                        </h2>
+
+                        <a href="#comparar-tiendas"
+                            class="font-body text-lole-champagne hover:text-lole-bronce transition-colors">
+                            Comparar tiendas →
+                        </a>
+
+                    </div>
+
+                </header>
+
+
+                <!-- CONTENEDOR PRINCIPAL DEL CARRUSEL -->
+                <div class="relative">
+
+                    <!-- BOTONES DE NAVEGACIÓN -->
+                    <div class="flex justify-end gap-3 mb-4">
+
+                        <button
+                            id="tiendas-prev"
+                            type="button"
+                            aria-label="Ver tiendas anteriores"
+                            class="bg-lole-champagne text-lole-noche rounded-full p-3 hover:bg-lole-dorado transition-colors disabled:opacity-40 disabled:cursor-not-allowed">
+
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="2"
+                                stroke="currentColor"
+                                class="size-5">
+
+                                <path stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M15.75 19.5 8.25 12l7.5-7.5"/>
+
+                            </svg>
+
+                        </button>
+
+
+                        <button
+                            id="tiendas-next"
+                            type="button"
+                            aria-label="Ver tiendas siguientes"
+                            class="bg-lole-champagne text-lole-noche rounded-full p-3 hover:bg-lole-dorado transition-colors disabled:opacity-40 disabled:cursor-not-allowed">
+
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="2"
+                                stroke="currentColor"
+                                class="size-5">
+
+                                <path stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="m8.25 4.5 7.5 7.5-7.5 7.5"/>
+
+                            </svg>
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- PISTA DESPLAZABLE DEL CARRUSEL -->
+                    <div id="tiendas-track"
+                        class="flex w-full min-w-0 gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-4">
+
+
+                        <!-- TARJETA 1: ELECTRO JUNÍN -->
+                        <article class="flex-none w-[85%] sm:w-[48%] lg:w-[calc((100%_-_2rem)_/_3)] snap-start bg-lole-profundo border border-white/20 rounded-2xl p-4">
+
+                            <div class="flex items-center justify-between mb-4">
+
+                                <span class="flex items-center justify-center w-11 h-11 rounded-full bg-lole-champagne text-lole-noche font-bold">
+                                    1
+                                </span>
+
+                                <span class="flex items-center gap-1 bg-lole-champagne/10 text-lole-dorado rounded-full px-3 py-1">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        fill="currentColor"
+                                        class="size-5">
+
+                                        <path fill-rule="evenodd"
+                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                            clip-rule="evenodd"/>
+
+                                    </svg>
+
+                                    9.1
+
+                                </span>
+
+                            </div>
+
+
+                            <div class="flex items-center gap-2 mb-1">
+
+                                <h3 class="font-body font-bold text-lg">
+                                    Electro Junín
+                                </h3>
+
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="size-5 text-lole-champagne shrink-0">
+
+                                    <path stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z"/>
+
+                                </svg>
+
+                            </div>
+
+
+                            <div class="flex items-center gap-1 text-lole-gris text-sm mb-3">
+                                <p>Cra. 49 #52-30 · Junín</p>
+                            </div>
+
+
+                            <div class="flex flex-wrap gap-2">
+
+                                <span class="rounded-full bg-lole-noche/60 px-2 py-1 text-xs">
+                                    $$
+                                </span>
+
+                                <span class="rounded-full bg-lole-noche/60 px-2 py-1 text-xs">
+                                    Garantía 1 año
+                                </span>
+
+                                <span class="rounded-full bg-lole-noche/60 px-2 py-1 text-xs">
+                                    Domicilio
+                                </span>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- TARJETA 2: TECNOCENTRO BOLÍVAR -->
+                        <article class="flex-none w-[85%] sm:w-[48%] lg:w-[calc((100%_-_2rem)_/_3)] snap-start bg-lole-profundo border border-white/20 rounded-2xl p-4">
+
+                            <div class="flex items-center justify-between mb-4">
+
+                                <span class="flex items-center justify-center w-11 h-11 rounded-full border border-lole-champagne/50 text-lole-champagne font-bold">
+                                    2
+                                </span>
+
+                                <span class="flex items-center gap-1 bg-lole-champagne/10 text-lole-dorado rounded-full px-3 py-1">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        fill="currentColor"
+                                        class="size-5">
+
+                                        <path fill-rule="evenodd"
+                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                            clip-rule="evenodd"/>
+
+                                    </svg>
+
+                                    9.0
+
+                                </span>
+
+                            </div>
+
+
+                            <div class="flex items-center gap-2 mb-1">
+
+                                <h3 class="font-body font-bold text-lg">
+                                    TecnoCentro Bolívar
+                                </h3>
+
+                            </div>
+
+
+                            <div class="flex items-center gap-1 text-lole-gris text-sm mb-3">
+                                <p>Cl. 51 #50-40 · Parque Bolívar</p>
+                            </div>
+
+
+                            <div class="flex flex-wrap gap-2">
+
+                                <span class="rounded-full bg-lole-noche/60 px-2 py-1 text-xs">
+                                    $$
+                                </span>
+
+                                <span class="rounded-full bg-lole-noche/60 px-2 py-1 text-xs">
+                                    Celulares
+                                </span>
+
+                                <span class="rounded-full bg-lole-noche/60 px-2 py-1 text-xs">
+                                    Reparación
+                                </span>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- TARJETA 3: HOGAR & MÁS CARABOBO -->
+                        <article class="flex-none w-[85%] sm:w-[48%] lg:w-[calc((100%_-_2rem)_/_3)] snap-start bg-lole-profundo border border-white/20 rounded-2xl p-4">
+
+                            <div class="flex items-center justify-between mb-4">
+
+                                <span class="flex items-center justify-center w-11 h-11 rounded-full border border-lole-champagne/50 text-lole-champagne font-bold">
+                                    3
+                                </span>
+
+                                <span class="flex items-center gap-1 bg-lole-champagne/10 text-lole-dorado rounded-full px-3 py-1">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        fill="currentColor"
+                                        class="size-5">
+
+                                        <path fill-rule="evenodd"
+                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                            clip-rule="evenodd"/>
+
+                                    </svg>
+
+                                    8.9
+
+                                </span>
+
+                            </div>
+
+
+                            <div class="flex items-center gap-2 mb-1">
+
+                                <h3 class="font-body font-bold text-lg">
+                                    Hogar &amp; Más Carabobo
+                                </h3>
+
+                            </div>
+
+
+                            <div class="flex items-center gap-1 text-lole-gris text-sm mb-3">
+                                <p>Cra. 52 #50-12 · Carabobo</p>
+                            </div>
+
+
+                            <div class="flex flex-wrap gap-2">
+
+                                <span class="rounded-full bg-lole-noche/60 px-2 py-1 text-xs">
+                                    $
+                                </span>
+
+                                <span class="rounded-full bg-lole-noche/60 px-2 py-1 text-xs">
+                                    Mejor precio
+                                </span>
+
+                                <span class="rounded-full bg-lole-noche/60 px-2 py-1 text-xs">
+                                    Crédito
+                                </span>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- TARJETA 4: MUNDO DIGITAL JUNÍN -->
+                        <article class="flex-none w-[85%] sm:w-[48%] lg:w-[calc((100%_-_2rem)_/_3)] snap-start bg-lole-profundo border border-white/20 rounded-2xl p-4">
+
+                            <div class="flex items-center justify-between mb-4">
+
+                                <span class="flex items-center justify-center w-11 h-11 rounded-full border border-lole-champagne/50 text-lole-champagne font-bold">
+                                    4
+                                </span>
+
+                                <span class="flex items-center gap-1 bg-lole-champagne/10 text-lole-dorado rounded-full px-3 py-1">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        fill="currentColor"
+                                        class="size-5">
+
+                                        <path fill-rule="evenodd"
+                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                            clip-rule="evenodd"/>
+
+                                    </svg>
+
+                                    8.8
+
+                                </span>
+
+                            </div>
+
+
+                            <div class="flex items-center gap-2 mb-1">
+
+                                <h3 class="font-body font-bold text-lg">
+                                    Mundo Digital Junín
+                                </h3>
+
+                            </div>
+
+
+                            <div class="flex items-center gap-1 text-lole-gris text-sm mb-3">
+                                <p>Cra. 50 #52-15 · Junín</p>
+                            </div>
+
+
+                            <div class="flex flex-wrap gap-2">
+
+                                <span class="rounded-full bg-lole-noche/60 px-2 py-1 text-xs">
+                                    $$
+                                </span>
+
+                                <span class="rounded-full bg-lole-noche/60 px-2 py-1 text-xs">
+                                    Tecnología
+                                </span>
+
+                                <span class="rounded-full bg-lole-noche/60 px-2 py-1 text-xs">
+                                    Garantía
+                                </span>
+
+                            </div>
+
+                        </article>
+
+
+                    </div>
+                    <!-- FIN DE LA PISTA DESPLAZABLE -->
+
+
+                </div>
+                <!-- FIN DEL CONTENEDOR PRINCIPAL -->
+
             </div>
-            <div class="flex flex-row gap-4 mt-6 rounded-sm">
-                <article class="bg-lole-profundo/20 text-lole-champagne border border-lole-champagne font-bold rounded-sm p-10">
-                    <span class="font-body bg-lole-dorado/20 text-lole-champagne font-bold rounded-full p-5">1</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                    </svg>
-                    <h3>Electro Junín</h3>
-                    <span class="text-lole-gris text-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
-                        </svg>
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
-                            </svg>
-                            <span>9.1</span>
-                        </span>
-                        <span>
-                            Cra. 49 #52-30 . Junín
-                        </span>
-                    </span>
-                </article>
-                <article class="bg-lole-profundo/20 text-lole-champagne border border-lole-champagne font-bold rounded-sm p-10" >
-                    <span class="font-body bg-lole-dorado/20 text-lole-champagne font-bold rounded-full p-2">2</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                    </svg>
-                    <h3>TecnoCentro Bolivar</h3>
-                    <span class="text-lole-gris text-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
-                        </svg>
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
-                            </svg>
-                            <span>8.9</span>
-                        </span>
-                        <span>
-                            Cl. 51 #50-40 . Parque Bolívar
-                        </span>
-                    </span>
-                </article>
-                <article class="bg-lole-profundo/20 text-lole-champagne border border-lole-champagne font-bold rounded-sm p-10" >
-                    <span class="font-body bg-lole-dorado/20 text-lole-champagne font-bold rounded-full p-2">3</span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                    </svg>
-                    <h3>Hogar & Más Carabobo </h3>
-                    <span class="text-lole-gris text-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
-                        </svg>
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
-                            </svg>
-                            <span>9.0</span>
-                        </span>
-                        <span>
-                            Cra. 52 #50-12 . Carabobo
-                        </span>
-                    </span>
 
-
-
-                
-                
-                
-                
-                
-                
-                </article>
-            </div>
         </section>
+  
     </main>
     <footer>
 
     </footer>
-    
+    <script src="src/js/carousel.js" defer></script>
 </body>
 </html>

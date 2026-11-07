@@ -17,3 +17,13 @@
     --color-lole-blanco: #F4F1EA;
     --color-lole-gris: #696E75;
 }
+/* Ocultar la barra de desplazamiento del carrusel */
+#tiendas-track {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer y Edge antiguos */
+}
+
+/* Chrome, Safari y Edge */
+#tiendas-track::-webkit-scrollbar {
+    display: none;
+}
