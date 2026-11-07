@@ -36,9 +36,47 @@
 
     </header>
     <main>
-        <section>
-            <h1>Compra en el centro como si lo conocieras de toda la vida</h1>
-            <p>Busca lo que necesitas y te mostramos en el mapa dónde comprarlo al mejor precio-calidad ¿No quieres bajar? Un Personal Shopper va por ti</p>
+
+        <!-- SECCIÓN HERO / PORTADA -->
+        <section class="relative min-h-[85vh] flex items-center bg-lole-navy overflow-hidden">
+            <div class="absolute inset-0 z-0"> 
+                <img src="/img/portada.jpeg" alt="Centro de Medellín de noche" class="w-full h-full object-cover object-center">
+                <div class="absolute inset-0 bg-gradient-to-r from-lole-navy via-lole-navy/80 to-transparent"></div>
+            </div>
+
+            <div>
+
+                <!-- titulo principal -->
+                <h1>Compra en el centro como si lo conocieras de toda la vida</h1>
+
+                <!-- Parrafo descriptivo -->
+                <p>Busca lo que necesitas y te mostramos en el mapa dónde comprarlo al mejor precio-calidad ¿No quieres bajar? Un Personal Shopper va por ti</p>
+                
+                <!-- Barra buscadora -->
+                <div>
+                    <form>
+                        <label for="busqueda">Buscar prroductos o servicios en el centro</label>
+                        <div>
+                            <input id="busqueda" type="text" placeholder="¿Qué necesitas? Ej: nevera, tenis, celular..."/>    
+                            <button type="submit">Buscar</button> 
+                        </div>
+                               
+                    </form>
+
+                </div>
+
+                <!-- categorias predeterminadas -->
+                <div>
+                    <button>Electrodomésticos</button>
+                    <button>Tecnología</button> 
+                    <button>Ropa</button>  
+                    <button>Calzado</button> 
+                    <button>Hogar</button>      
+
+                </div>
+
+            </div>
+            
 
         </section>
 
