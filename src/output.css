@@ -330,13 +330,9 @@
   .mx-auto {
     margin-inline: auto;
   }
-<<<<<<< HEAD
   .my-7 {
     margin-block: calc(var(--spacing) * 7);
   }
-=======
-
->>>>>>> origin/juan
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
@@ -356,7 +352,6 @@
   .mt-7 {
     margin-top: calc(var(--spacing) * 7);
   }
-<<<<<<< HEAD
   .mr-3 {
     margin-right: calc(var(--spacing) * 3);
   }
@@ -522,29 +517,6 @@
     margin-inline-start: calc(calc(var(--spacing) * 8) * var(--tw-space-x-reverse));
     margin-inline-end: calc(calc(var(--spacing) * 8) * calc(1 - var(--tw-space-x-reverse)));
   }
-=======
-
-  .grid {
-    display: grid;
-  }
-
-  .max-w-6xl {
-    max-width: var(--container-6xl);
-  }
-
-  .grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .items-start {
-    align-items: flex-start;
-  }
-
-  .gap-10 {
-    gap: calc(var(--spacing) * 10);
-  }
-
->>>>>>> origin/juan
   .overflow-hidden {
     overflow: hidden;
   }
@@ -556,13 +528,9 @@
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
-<<<<<<< HEAD
   .rounded-lg {
     border-radius: var(--radius-lg);
   }
-=======
-
->>>>>>> origin/juan
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
@@ -577,7 +545,6 @@
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
   }
-<<<<<<< HEAD
   .border-white {
     border-color: var(--color-white);
   }
@@ -587,9 +554,6 @@
       border-color: color-mix(in oklab, var(--color-white) 5%, transparent);
     }
   }
-=======
-
->>>>>>> origin/juan
   .border-white\/10 {
     border-color: color-mix(in srgb, #fff 10%, transparent);
 
@@ -597,7 +561,6 @@
       border-color: color-mix(in oklab, var(--color-white) 10%, transparent);
     }
   }
-<<<<<<< HEAD
   .border-white\/20 {
     border-color: color-mix(in srgb, #fff 20%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -616,13 +579,11 @@
   .bg-lole-gold {
     background-color: var(--color-lole-gold);
   }
-=======
 
   .bg-lole-deep {
     background-color: var(--color-lole-deep);
   }
 
->>>>>>> origin/juan
   .bg-lole-gold-warm {
     background-color: var(--color-lole-gold-warm);
   }
@@ -630,7 +591,6 @@
   .bg-lole-navy {
     background-color: var(--color-lole-navy);
   }
-<<<<<<< HEAD
   .bg-lole-navy\/40 {
     background-color: color-mix(in srgb, #06162F 40%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -696,9 +656,7 @@
   .p-2 {
     padding: calc(var(--spacing) * 2);
   }
-=======
 
->>>>>>> origin/juan
   .p-5 {
     padding: calc(var(--spacing) * 5);
   }
@@ -706,7 +664,6 @@
   .p-6 {
     padding: calc(var(--spacing) * 6);
   }
-<<<<<<< HEAD
   .p-8 {
     padding: calc(var(--spacing) * 8);
   }
@@ -728,13 +685,11 @@
   .py-2\.5 {
     padding-block: calc(var(--spacing) * 2.5);
   }
-=======
 
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
   }
 
->>>>>>> origin/juan
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
   }
@@ -742,13 +697,10 @@
   .py-16 {
     padding-block: calc(var(--spacing) * 16);
   }
-<<<<<<< HEAD
   .pr-4 {
     padding-right: calc(var(--spacing) * 4);
   }
-=======
 
->>>>>>> origin/juan
   .font-body {
     font-family: var(--font-body);
   }
@@ -756,7 +708,6 @@
   .font-display {
     font-family: var(--font-display);
   }
-<<<<<<< HEAD
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
@@ -769,21 +720,16 @@
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
   }
-=======
 
->>>>>>> origin/juan
   .text-5xl {
     font-size: var(--text-5xl);
     line-height: var(--tw-leading, var(--text-5xl--line-height));
   }
-<<<<<<< HEAD
   .text-base {
     font-size: var(--text-base);
     line-height: var(--tw-leading, var(--text-base--line-height));
   }
-=======
 
->>>>>>> origin/juan
   .text-sm {
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
@@ -808,7 +754,6 @@
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
-<<<<<<< HEAD
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
@@ -821,14 +766,11 @@
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
   }
-=======
 
->>>>>>> origin/juan
   .tracking-\[0\.3em\] {
     --tw-tracking: 0.3em;
     letter-spacing: 0.3em;
   }
-<<<<<<< HEAD
   .tracking-wider {
     --tw-tracking: var(--tracking-wider);
     letter-spacing: var(--tracking-wider);
@@ -860,13 +802,11 @@
       color: color-mix(in oklab, var(--color-lole-cream) 80%, transparent);
     }
   }
-=======
 
   .text-lole-cream {
     color: var(--color-lole-cream);
   }
 
->>>>>>> origin/juan
   .text-lole-gold {
     color: var(--color-lole-gold);
   }
@@ -874,7 +814,6 @@
   .text-lole-navy {
     color: var(--color-lole-navy);
   }
-<<<<<<< HEAD
   .uppercase {
     text-transform: uppercase;
   }
@@ -993,10 +932,8 @@
     .md\:w-auto {
       width: auto;
     }
-=======
 
   @media (width >=48rem) {
->>>>>>> origin/juan
     .md\:grid-cols-2 {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -1044,7 +981,6 @@
   inherits: false;
   initial-value: solid;
 }
-<<<<<<< HEAD
 @property --tw-gradient-position {
   syntax: "*";
   inherits: false;
@@ -1087,9 +1023,7 @@
   inherits: false;
   initial-value: 100%;
 }
-=======
 
->>>>>>> origin/juan
 @property --tw-leading {
   syntax: "*";
   inherits: false;
@@ -1104,7 +1038,6 @@
   syntax: "*";
   inherits: false;
 }
-<<<<<<< HEAD
 @property --tw-shadow {
   syntax: "*";
   inherits: false;
@@ -1218,7 +1151,6 @@
       --tw-translate-y: 0;
       --tw-translate-z: 0;
       --tw-space-x-reverse: 0;
-=======
 
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: block))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
@@ -1227,7 +1159,6 @@
     ::before,
     ::after,
     ::backdrop {
->>>>>>> origin/juan
       --tw-border-style: solid;
       --tw-gradient-position: initial;
       --tw-gradient-from: #0000;
