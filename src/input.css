@@ -6,13 +6,18 @@
     --font-display: 'DM Serif Display', serif;
     --font-body: 'Fira Sans', sans-serif;
 
-    --color-lole-navy: #06162F;
-    --color-lole-deep: #0C2448;
-    --color-lole-gold: #E5BF85;
-    --color-lole-gold-warm: #EFAD4D;
-    --color-lole-bronze: #C79E75;
-    --color-lole-cream: #F4F1EA;
-    --color-lole-gray: #696E75;
+    /*Colores principales*/
+    --color-lole-navy: #06162F; /*noche*/
+    --color-lole-deep: #0C2448; /*produnfo*/
+
+    /*Dorados*/
+    --color-lole-gold: #E5BF85; /*champagne*/
+    --color-lole-gold-warm: #EFAD4D; /*dorado*/
+    --color-lole-bronze: #C79E75; /*bronce*/
+
+    /*Colores neutros*/
+    --color-lole-cream: #F4F1EA; /*blanco*/
+    --color-lole-gray: #696E75; /*gris*/
 
 
 }
