@@ -368,6 +368,7 @@
   }
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
+  }
   .relative {
     position: relative;
   }
@@ -403,6 +404,7 @@
   }
   .ml-4 {
     margin-left: calc(var(--spacing) * 4);
+  }
   .mb-8 {
     margin-bottom: calc(var(--spacing) * 8);
   }
@@ -435,6 +437,7 @@
   }
   .h-4 {
     height: calc(var(--spacing) * 4);
+  }
   .table {
     display: table;
   }
@@ -472,6 +475,8 @@
   }
   .w-4 {
     width: calc(var(--spacing) * 4);
+  }
+
   .h-11 {
     height: calc(var(--spacing) * 11);
   }
@@ -486,6 +491,8 @@
   }
   .w-auto {
     width: auto;
+  }
+
   .w-11 {
     width: calc(var(--spacing) * 11);
   }
@@ -585,6 +592,7 @@
   }
   .gap-6 {
     gap: calc(var(--spacing) * 6);
+  }
   .justify-end {
     justify-content: flex-end;
   }
@@ -621,6 +629,7 @@
   }
   .rounded-lg {
     border-radius: var(--radius-lg);
+  }
   .overflow-x-auto {
     overflow-x: auto;
   }
@@ -652,6 +661,7 @@
   .border-b {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
+  }
   .border-lole-bronce {
     border-color: var(--color-lole-bronce);
   }
@@ -706,8 +716,8 @@
     background-color: var(--color-lole-profundo);
   }
 
-  .bg-lole-champagne-warm {
-    background-color: var(--color-lole-champagne-warm);
+  .bg-lole-dorado {
+    background-color: var(--color-lole-dorado);
   }
 
   .bg-lole-noche {
@@ -791,6 +801,7 @@
   }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
+  }
   .bg-lole-champagne {
     background-color: var(--color-lole-champagne);
   }
@@ -875,6 +886,7 @@
   .text-3xl {
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
   .py-16 {
     padding-block: calc(var(--spacing) * 16);
   }
@@ -1006,6 +1018,7 @@
   }
   .uppercase {
     text-transform: uppercase;
+  }
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
@@ -1107,8 +1120,8 @@
     .hover\:bg-lole-bronce:hover {
       background-color: var(--color-lole-bronce);
     }
-    .hover\:bg-lole-champagne-warm:hover {
-      background-color: var(--color-lole-champagne-warm);
+    .hover\:bg-lole-dorado:hover {
+      background-color: var(--color-lole-dorado);
     }
     .hover\:text-lole-champagne:hover {
       color: var(--color-lole-champagne);
@@ -1431,6 +1444,7 @@
       --tw-translate-y: 0;
       --tw-translate-z: 0;
       --tw-space-x-reverse: 0;
+    }
 
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: block))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
