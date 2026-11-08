@@ -11,10 +11,10 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Fira+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- conexion con Tailwind CSS -->
-    <link href="src/output.css" rel="stylesheet">
+    <link href="/src/output.css" rel="stylesheet">
 
 </head>
-<body class="min-h-screen bg-lole-navy font-body text-lole-cream selection:bg-lole-gold">
+<body class="text-lole-cream min-h-screen bg-lole-navy font-body selection:bg-lole-gold">
     <header class="w-full bg-lole-navy/80 backdrop-blur-md sticky top-0 z-50 border-b border-white/5">
        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <span class="flex shrink-0 items-center h-20 w-auto">
@@ -41,38 +41,50 @@
         <section class="relative min-h-[85vh] flex items-center bg-lole-navy overflow-hidden">
             <div class="absolute inset-0 z-0"> 
                 <img src="/img/portada.jpeg" alt="Centro de Medellín de noche" class="w-full h-full object-cover object-center">
-                <div class="absolute inset-0 bg-gradient-to-r from-lole-navy via-lole-navy/80 to-transparent"></div>
+                <div class="absolute inset-0 bg-linear-to-r from-lole-navy via-lole-navy/80 to-transparent"></div>
             </div>
 
-            <div>
+            <div class="relative z-10 max-w-7xl mx-auto px-6 py-16 w-full">
+                <div class="max-w-2xl">
+                    <!-- titulo principal -->
+                    <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-normal text-lole-cream leading-tight mb-6">
+                        Compra en el centro como si lo conocieras de toda la vida
+                    </h1>
 
-                <!-- titulo principal -->
-                <h1>Compra en el centro como si lo conocieras de toda la vida</h1>
+                    <!-- Parrafo descriptivo -->
+                    <p class="text-base sm:text-lg text-lole-cream/80 font-body mb-8 leading-relaxed">
+                        Busca lo que necesitas y te mostramos en el mapa dónde comprarlo al mejor precio-calidad ¿No quieres bajar? Un Personal Shopper va por ti
+                    </p>
+                    
+                    <!-- Barra buscadora -->
+                    <div class="relative mb-6">
+                        <form role="search" >
+                            <label for="busqueda" class="sr-only">Buscar prroductos o servicios en el centro</label>
+                            <div class="flex items-center bg-lole-navy/60 backdrop-blur-md border border-white/20 rounded-full p-2 focus-within:border-lole-gold transition-colors">
+                                <!-- Icono lupa -->
+                                <svg class="w-6 h-6 text-lole-cream/60 ml-4 mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                                </svg>
 
-                <!-- Parrafo descriptivo -->
-                <p>Busca lo que necesitas y te mostramos en el mapa dónde comprarlo al mejor precio-calidad ¿No quieres bajar? Un Personal Shopper va por ti</p>
-                
-                <!-- Barra buscadora -->
-                <div>
-                    <form>
-                        <label for="busqueda">Buscar prroductos o servicios en el centro</label>
-                        <div>
-                            <input id="busqueda" type="text" placeholder="¿Qué necesitas? Ej: nevera, tenis, celular..."/>    
-                            <button type="submit">Buscar</button> 
-                        </div>
-                               
-                    </form>
+                                <input class="w-full bg-transparent text-lole-cream placeholder-lole-cream/50 text-sm sm:text-base focus:outline-none pr-4"
+                                id="busqueda" type="text" placeholder="¿Qué necesitas? Ej: nevera, tenis, celular..."/>    
+                                <button type="submit">Buscar</button> 
+                            </div>
+                                    
+                        </form>
+                        
 
-                </div>
+                    </div>
 
-                <!-- categorias predeterminadas -->
-                <div>
-                    <button>Electrodomésticos</button>
-                    <button>Tecnología</button> 
-                    <button>Ropa</button>  
-                    <button>Calzado</button> 
-                    <button>Hogar</button>      
+                    <!-- categorias predeterminadas -->
+                    <div>
+                        <button>Electrodomésticos</button>
+                        <button>Tecnología</button> 
+                        <button>Ropa</button>  
+                        <button>Calzado</button> 
+                        <button>Hogar</button>      
 
+                    </div>
                 </div>
 
             </div>
