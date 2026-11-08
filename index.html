@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,139 +8,264 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Fira+Sans:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Fira+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
     <!-- conexion con Tailwind CSS -->
-    <link href="src/output.css" rel="stylesheet">
+    <link href="/src/output.css" rel="stylesheet">
 
 </head>
-
-<body>
-    <header>
+<body class="text-lole-cream min-h-screen bg-lole-navy font-body selection:bg-lole-gold">
+    <header class="w-full bg-lole-navy/80 backdrop-blur-md sticky top-0 z-50 border-b border-white/5">
+       <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <span class="flex shrink-0 items-center h-20 w-auto">
+                <img class="max-h-20 w-auto object-contain" src="/img/logo.jpeg" alt="" >
+            </span>    
+            <nav class="w-full md:w-auto">
+                <ul class="hidden md:flex justify-between items-center space-x-8 text-sm font-medium text-lole-cream">
+                    <li class="hover:text-lole-gold cursor-pointer transition-colors">Inicio</li>
+                    <li class="hover:text-lole-gold cursor-pointer transition-colors">Encuentra Comercios</li>
+                    <li class="hover:text-lole-gold cursor-pointer transition-colors">Personal Shopper</li>
+                    <li class="hover:text-lole-gold cursor-pointer transition-colors">Para comerciantes</li>
+                    <li class="hover:text-lole-gold cursor-pointer transition-colors">Como Funciona</li>
+                </ul>
+            </nav>
+            <span>
+                <button class="bg-lole-gold-warm text-lole-navy font-bold px-6 py-2 rounded-full hover:bg-lole-bronze cursor-pointer transition-colors -translate-y-2">Ingresar</button>
+            </span>
+        </div>
 
     </header>
     <main>
+
+        <!-- SECCIÓN HERO / PORTADA -->
+        <section class="relative min-h-[85vh] flex items-center bg-lole-navy overflow-hidden">
+            <div class="absolute inset-0 z-0"> 
+                <img src="/img/portada.jpeg" alt="Centro de Medellín de noche" class="w-full h-full object-cover object-center">
+                <div class="absolute inset-0 bg-linear-to-r from-lole-navy via-lole-navy/80 to-transparent"></div>
+            </div>
+
+            <div class="relative z-10 max-w-7xl mx-auto px-6 py-16 w-full">
+                <div class="max-w-2xl">
+                    <!-- titulo principal -->
+                    <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-normal text-lole-cream leading-tight mb-6">
+                        Compra en el centro como si lo conocieras de toda la vida
+                    </h1>
+
+                    <!-- Parrafo descriptivo -->
+                    <p class="text-base sm:text-lg text-lole-cream/80 font-body mb-8 leading-relaxed">
+                        Busca lo que necesitas y te mostramos en el mapa dónde comprarlo al mejor precio-calidad ¿No quieres bajar? Un Personal Shopper va por ti
+                    </p>
+                    
+                    <!-- Barra buscadora -->
+                    <div class="relative mb-6">
+                        <form role="search" >
+                            <label for="busqueda" class="sr-only">Buscar prroductos o servicios en el centro</label>
+                            <div class="flex items-center bg-lole-navy/60 backdrop-blur-md border border-white/20 rounded-full p-2 focus-within:border-lole-gold transition-colors">
+                                <!-- Icono lupa -->
+                                <svg class="w-6 h-6 text-lole-cream/60 ml-4 mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                                </svg>
+
+                                <input class="w-full bg-transparent text-lole-cream placeholder-lole-cream/50 text-sm sm:text-base focus:outline-none pr-4"
+                                id="busqueda" type="text" placeholder="¿Qué necesitas? Ej: nevera, tenis, celular..."/>    
+                                <button type="submit">Buscar</button> 
+                            </div>
+                                    
+                        </form>
+                        
+
+                    </div>
+
+                    <!-- categorias predeterminadas -->
+                    <div>
+                        <button>Electrodomésticos</button>
+                        <button>Tecnología</button> 
+                        <button>Ropa</button>  
+                        <button>Calzado</button> 
+                        <button>Hogar</button>      
+
+                    </div>
+                </div>
+
+            </div>
+            
+
+        </section>
+
+
+
         <section id="para-comerciantes" class="bg-lole-navy py-16 px-6 font-body">
             <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-start">
 
-
+                
                 <div>
-                    <p class="text-lole-gold text-xs tracking-[0.3em] font-bold">— PARA COMERCIANTES</p>
-                    <h2 class="font-display text-lole-cream text-5xl leading-tight mt-4">Tu negocio merece<br>ser
-                        encontrado.</h2>
-                    <p class="text-lole-cream mt-5 leading-relaxed">Lleva tu comercio a más personas. Con Lole podrás
-                        mostrar tus productos, llegar a nuevos compradores y aprovechar las oportunidades del comercio
-                        digital.</p>
+                <p class="text-lole-gold text-xs tracking-[0.3em] font-bold">— PARA COMERCIANTES</p>
+                <h2 class="font-display text-lole-cream text-5xl leading-tight mt-4">Tu negocio merece<br>ser encontrado.</h2>
+                <p class="text-lole-cream mt-5 leading-relaxed">Lleva tu comercio a más personas. Con Lole podrás mostrar tus productos, llegar a nuevos compradores y aprovechar las oportunidades del comercio digital.</p>
 
-                    <div class="bg-lole-deep border border-white/10 rounded-2xl p-5 mt-7">
-                        <p class="text-lole-cream text-sm leading-relaxed">Lole tendrá <span
-                                class="text-lole-gold font-bold">planes de suscripción para comercios</span>, pensados
-                            para negocios de todos los tamaños.</p>
-                    </div>
-
-                    <button class="bg-lole-gold-warm text-lole-navy font-bold px-6 py-3 rounded-full mt-7">Quiero
-                        registrar mi negocio →</button>
+                <div class="bg-lole-deep border border-white/10 rounded-2xl p-5 mt-7">
+                    <p class="text-lole-cream text-sm leading-relaxed">Lole tendrá <span class="text-lole-gold font-bold">planes de suscripción para comercios</span>, pensados para negocios de todos los tamaños.</p>
                 </div>
 
+                <button class="bg-lole-gold-warm text-lole-navy font-bold px-6 py-3 rounded-full mt-7">Quiero registrar negocio →</button>
+                </div>
 
+                
                 <div class="bg-lole-deep border border-white/10 rounded-2xl overflow-hidden grid grid-cols-2">
 
-                    <div class="p-6 border-b border-r border-white/10">
+                <div class="p-6 border-b border-r border-white/10">
+                    
+                    <h3 class="text-lole-cream font-bold mt-3">Mayor visibilidad</h3>
+                    <p class="text-lole-cream text-sm mt-2">Aparece cuando las personas buscan lo que vendes.</p>
+                </div>
 
-                        <h3 class="text-lole-cream font-bold mt-3">Mayor visibilidad</h3>
-                        <p class="text-lole-cream text-sm mt-2">Aparece cuando las personas buscan lo que vendes.</p>
-                    </div>
+                <div class="p-6 border-b border-white/10">
+                    
+                    <h3 class="text-lole-cream font-bold mt-3">Nuevos clientes</h3>
+                    <p class="text-lole-cream text-sm mt-2">Llega a compradores que hoy no visitan el centro.</p>
+                </div>
 
-                    <div class="p-6 border-b border-white/10">
+                <div class="p-6 border-b border-r border-white/10">
+                    
+                    <h3 class="text-lole-cream font-bold mt-3">Exhibición de productos</h3>
+                    <p class="text-lole-cream text-sm mt-2">Muestra tu catálogo con fotos, precios y garantías.</p>
+                </div>
 
-                        <h3 class="text-lole-cream font-bold mt-3">Nuevos clientes</h3>
-                        <p class="text-lole-cream text-sm mt-2">Llega a compradores que hoy no visitan el centro.</p>
-                    </div>
+                <div class="p-6 border-b border-white/10">
+                
+                    <h3 class="text-lole-cream font-bold mt-3">Presencia en el mapa</h3>
+                    <p class="text-lole-cream text-sm mt-2">Que te ubiquen fácilmente en el mapa comercial.</p>
+                </div>
 
-                    <div class="p-6 border-b border-r border-white/10">
+                <div class="p-6 border-r border-white/10">
+                    
+                    <h3 class="text-lole-cream font-bold mt-3">Destaca tu establecimiento</h3>
+                    <p class="text-lole-cream text-sm mt-2">Opciones para ganar protagonismo en tu categoría.</p>
+                </div>
 
-                        <h3 class="text-lole-cream font-bold mt-3">Exhibición de productos</h3>
-                        <p class="text-lole-cream text-sm mt-2">Muestra tu catálogo con fotos, precios y garantías.</p>
-                    </div>
-
-                    <div class="p-6 border-b border-white/10">
-
-                        <h3 class="text-lole-cream font-bold mt-3">Presencia en el mapa</h3>
-                        <p class="text-lole-cream text-sm mt-2">Que te ubiquen fácilmente en el mapa comercial.</p>
-                    </div>
-
-                    <div class="p-6 border-r border-white/10">
-
-                        <h3 class="text-lole-cream font-bold mt-3">Destaca tu establecimiento</h3>
-                        <p class="text-lole-cream text-sm mt-2">Opciones para ganar protagonismo en tu categoría.</p>
-                    </div>
-
-                    <div class="p-6">
-
-                        <h3 class="text-lole-cream font-bold mt-3">Información en tus manos</h3>
-                        <p class="text-lole-cream text-sm mt-2">Tú administras directamente los datos de tu comercio.
-                        </p>
-                    </div>
+                <div class="p-6">
+                    
+                    <h3 class="text-lole-cream font-bold mt-3">Información en tus manos</h3>
+                    <p class="text-lole-cream text-sm mt-2">Tú administras directamente los datos de tu comercio.</p>
+                </div>
 
                 </div>
             </div>
         </section>
-        <section id="porque-lole" class="bg-lole-navy font-body py-16 px-6">
-            <div class="max-w-6xl mx-auto ">
 
-                <div class="text-center mb-12">
-                    <p class="text-lole-gold text-xs tracking-[0.3em] font-semibold mb-3">— ¿porque lole?</p>
-                    <h2 class="font-display text-lole-cream text-5xl leading-tight mt-4">¿porque lole?</h2>
+       
+       <!-- ¿POR QUÉ LOLE? -->
+        <section class="bg-lole-navy py-16">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-lole-gold text-xs tracking-widest font-semibold">POR QUÉ LOLE</p>
+            <h2 class="font-display text-lole-cream text-4xl font-bold mt-3">¿Por qué Lole?</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+
+                <div class="bg-lole-deep border border-lole-bronze rounded-3xl p-8 text-center">
+                    <div class="w-12 h-12 mx-auto rounded-full border border-lole-bronze flex items-center justify-center text-lole-gold">◉</div>
+                    <h3 class="font-display text-lole-cream text-lg font-semibold mt-5">Descubrimiento</h3>
+                    <p class="font-body text-lole-cream opacity-70 text-sm mt-2">Encuentra comercios que no conocías.</p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-
-                    <div class="bg-lole-deep border border-white/10 rounded-2xl p-5 text-center ">
-                        <h3 class="text-lole-cream font-bold text-lg mt-3">Descubrimiento</h3>
-                        <p class="text-lole-cream text-sm mt-2">Encuentra proyectos que no conocias.</p>
-                    </div>
-
-                    <div class="bg-lole-deep border border-white/10 rounded-2xl p-5 text-center">
-                        <h3 class="text-lole-cream font-bold mt-3">Comparacion</h3>
-                        <p class="text-lole-cream text-sm mt-2">Analiza opciones antes de comparar.</p>
-                    </div>
-
-                    <div class="bg-lole-deep border border-white/10 rounded-2xl p-5 text-center">
-                        <h3 class="text-lole-cream font-bold mt-3">Confianza</h3>
-                        <p class="text-lole-cream text-sm mt-2">Consulta reputacion y calificaciones.</p>
-                    </div>
-
-                    <div class="bg-lole-deep border border-white/10 rounded-2xl p-5 text-center">
-                        <h3 class="text-lole-cream font-bold mt-3">Comodidad</h3>
-                        <p class="text-lole-cream text-sm mt-2">Compra en el centro sin necesidad de desplazarte.</p>
-                    </div>
-
+                <div class="bg-lole-deep border border-lole-bronze rounded-3xl p-8 text-center">
+                    <div class="w-12 h-12 mx-auto rounded-full border border-lole-bronze flex items-center justify-center text-lole-gold">⚖</div>
+                    <h3 class="font-display text-lole-cream text-lg font-semibold mt-5">Comparación</h3>
+                    <p class="font-body text-lole-cream opacity-70 text-sm mt-2">Analiza opciones antes de comprar.</p>
                 </div>
 
+                <div class="bg-lole-deep border border-lole-bronze rounded-3xl p-8 text-center">
+                    <div class="w-12 h-12 mx-auto rounded-full border border-lole-bronze flex items-center justify-center text-lole-gold">✓</div>
+                    <h3 class="font-display text-lole-cream text-lg font-semibold mt-5">Confianza</h3>
+                    <p class="font-body text-lole-cream opacity-70 text-sm mt-2">Consulta reputación y calificaciones.</p>
+                </div>
 
-
-
-
-
+                <div class="bg-lole-deep border border-lole-bronze rounded-3xl p-8 text-center">
+                    <div class="w-12 h-12 mx-auto rounded-full border border-lole-bronze flex items-center justify-center text-lole-gold">🛒</div>
+                    <h3 class="font-display text-lole-cream text-lg font-semibold mt-5">Comodidad</h3>
+                    <p class="font-body text-lole-cream opacity-70 text-sm mt-2">Compra en el centro sin necesidad de desplazarte.</p>
+                </div>
 
             </div>
-
-
-
-
-
-
-
-
-
+        </div>
         </section>
+        
+           
+        
+
+
+
+
+        
     </main>
     <footer>
+        <div class="bg-lole-navy py-10">
 
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 px-4 max-w-7xl mx-auto mb-10">
+
+                <div>
+                    <h3 class="text-lole-gold text-6xl tracking-widest font-display">lole.</h3>
+                    <h5 class="text-lole-cream text-lg mt-2 font-body">El centro, mas cerca de ti.</h5>
+                    <p class="font-body text-lole-cream mt-2 text-xs">Comercios del centro de medellin y personal shoppers, en una sola plataforma</p>
+
+
+                </div>
+
+
+
+                <div>
+                    <h4 class="text-lole-gold font-display mb-3 tracking-widest">Navegacion</h4>
+                    <ul class="space-y-2 text-sm text-lole-cream/80">
+                        <li>Inicio</li>
+                        <li>Encuentra Comercios</li>
+                        <li>Personal Shopper</li>
+                        <li>Para comerciantes</li>
+                        <li>Como Funciona</li>
+                    </ul>
+                </div>  
+                
+                <div>
+                    <h4 class="text-lole-gold font-display mb-3 tracking-widest">servicios</h4>
+                    <ul class="space-y-2 text-sm text-lole-cream/80">
+                        <li>Encuentra y compra</li>
+                        <li>Personal shopper</li> 
+                        <li>Para comerciantes</li>
+                        <li>Unete a lole</li>
+
+                    </ul>
+
+
+                </div>
+
+                <div>
+                    <h4 class="text-lole-gold font-display mb-3 tracking-widest">contacto</h4>
+                    <ul class="space-y-2 text-sm text-lole-cream/80 font-body">
+                        <li> ✉️Correo: proximamente</li>
+                        <li> 📞Telefono: proximamente</li>
+
+
+
+
+            </div>
+            
+
+            
+        </div>
+
+        <div class="border-t"></div>
+
+        <div class="px-4 pt-6 flex justify-between">
+            
+             <p class="text-lole-cream text-sm ">© 2026 Lole. Todos los derechos reservados.</p>
+                    
+            
+            <div class="flex gap-6 ">
+                <p class="text-lole-cream text-sm mt-2">Politica de Privacidad</p>
+                <p class="text-lole-cream text-sm mt-2">Terminos y Condiciones</p>
+
+            </div>
+        </div>
     </footer>
-
+    
 </body>
-
 </html>
