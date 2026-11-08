@@ -5,17 +5,26 @@
     --font-display: 'DM Serif Display', serif;
     --font-body: 'Fira Sans', sans-serif;
 
-    --color-lole-navy: #06162F;
-    --color-lole-deep: #0C2448;
-    --color-lole-gold: #E5BF85;
-    --color-lole-gold-warm: #EFAD4D;
-    --color-lole-bronze: #C79E75;
-    --color-lole-cream: #F4F1EA;
-    --color-lole-gray: #696E75;
+    /* Colores principales */
+    --color-lole-noche: #06162F;
+    --color-lole-profundo: #0C2448;
+
+    /* Dorados */
+    --color-lole-champagne: #E5BF85;
+    --color-lole-dorado: #EFAD4D;
+    --color-lole-bronce: #C79E75;
+
+    /* Colores neutros */
+    --color-lole-blanco: #F4F1EA;
+    --color-lole-gris: #696E75;
+}
+/* Ocultar la barra de desplazamiento del carrusel */
+#tiendas-track {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer y Edge antiguos */
 }
 
-
-
-
-
-
+/* Chrome, Safari y Edge */
+#tiendas-track::-webkit-scrollbar {
+    display: none;
+}
