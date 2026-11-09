@@ -18,6 +18,16 @@
     --color-lole-blanco: #F4F1EA;
     --color-lole-gris: #696E75;
 }
+/* Modo claro */
+html.light-mode {
+    --color-lole-noche: #F4F1EA;
+    --color-lole-profundo: #FFFFFF;
+    --color-lole-blanco: #06162F;
+    --color-lole-gris: #696E75;
+    
+    --color-lole-champagne: #0C2448;
+}
+
 /* Ocultar la barra de desplazamiento del carrusel */
 #tiendas-track {
     scrollbar-width: none; /* Firefox */
