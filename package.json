@@ -1,14 +1,6 @@
 {
-<<<<<<< HEAD
   "devDependencies": {
     "@tailwindcss/cli": "^4.3.5",
     "tailwindcss": "^4.3.5"
-=======
-  "dependencies": {
-    "tailwindcss": "^4.3.4"
-  },
-  "devDependencies": {
-    "@tailwindcss/cli": "^4.3.4"
->>>>>>> origin/juan
   }
 }
