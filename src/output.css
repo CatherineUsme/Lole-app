@@ -644,12 +644,6 @@
       background-color: color-mix(in oklab, var(--color-lole-noche) 40%, transparent);
     }
   }
-  .bg-lole-noche\/50 {
-    background-color: color-mix(in srgb, #06162F 50%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-lole-noche) 50%, transparent);
-    }
-  }
   .bg-lole-noche\/60 {
     background-color: color-mix(in srgb, #06162F 60%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -664,12 +658,6 @@
   }
   .bg-lole-profundo {
     background-color: var(--color-lole-profundo);
-  }
-  .bg-lole-profundo\/90 {
-    background-color: color-mix(in srgb, #0C2448 90%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-lole-profundo) 90%, transparent);
-    }
   }
   .bg-transparent {
     background-color: transparent;
@@ -862,6 +850,21 @@
   .tracking-widest {
     --tw-tracking: var(--tracking-widest);
     letter-spacing: var(--tracking-widest);
+  }
+  .text-\[\#696E75\] {
+    color: #696E75;
+  }
+  .text-\[\#E5BF85\] {
+    color: #E5BF85;
+  }
+  .text-\[\#F4F1EA\] {
+    color: #F4F1EA;
+  }
+  .text-\[\#\] {
+    color: #;
+  }
+  .text-\[\#fff\] {
+    color: #fff;
   }
   .text-lole-blanco {
     color: var(--color-lole-blanco);
