@@ -32,6 +32,14 @@
             <span>
                 <button class="bg-lole-dorado text-lole-noche font-bold px-6 py-2 mt-5 rounded-full hover:bg-lole-bronce cursor-pointer transition-colors -translate-y-2">Ingresar</button>
             </span>
+            <button id="theme-toggle"type="button" aria-label="Activar modo claro" aria-pressed="false" class="border border-lole-champagne text-lole-champagne rounded-full p-2 hover:bg-lole-champagne/10 transition-colors">
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none"viewBox="0 0 24 24" stroke-width="1.5"stroke="currentColor" class="size-5">
+
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-6.364-2.636 1.591-1.591M3 12h2.25m.386-6.364 1.591 1.591M16.5 12a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Z"/>
+                </svg>
+
+            </button>
         </div>
 
     </header>
@@ -53,7 +61,7 @@
 
                     <!-- Parrafo descriptivo -->
                     <p class="text-base sm:text-lg text-lole-blanco/80 font-body mb-8 leading-relaxed">
-                        Busca lo que necesitas y te mostramos en el mapa dónde comprarlo al mejor precio-calidad ¿No quieres bajar? Un Personal Shopper va por ti
+                        Busca lo que necesitas y te mostramos en el mapa dónde comprarlo al mejor precio-calidad ¿No quieres bajar al centro? Un Personal Shopper va por ti
                     </p>
                     
                     <!-- Barra buscadora -->
@@ -245,16 +253,16 @@
                 <!--Contenedor del mapa lado derecho -->
                 <div class="rounded-3xl border border-white/10 bg-lole-profundo p-6 relative overflow-hidden min-h-[350px]">
                     <img src="img/Mapa.jpg" alt="Mapa comercial de Medellín" class="absolute inset-0 w-full h-full object-cover opacity-40">
-                    <div class="absolute inset-0 bg-lole-noche/50 pointer-events-none"></div>
+                    <div class="absolute inset-0 bg-[#06162F]/50 pointer-events-none"></div>
                     
                     <!-- Contenedor tarjeta flotante-->
-                    <div class="absolute top-6 right-6 z-10 w-64 p-4 rounded-2xl bg-lole-profundo/90 backdrop-blur-md border border-white/10 shadow-2xl">   
-                        <span class="text-[10px] font-bold text-lole-champagne tracking-widest uppercase">SELECCIONADO</span>
-                        <h4 class="font-bold text-white text-base mt-1">Comercio de ejemplo</h4>
-                        <p class="text-xs text-lole-gray">Electrodomésticos</p>
+                    <div class="absolute top-6 right-6 z-10 w-64 p-4 rounded-2xl bg-[#0C2448]/90 backdrop-blur-md border border-white/10 shadow-2xl">   
+                        <span class="text-[10px] font-bold text-[#E5BF85] tracking-widest uppercase">SELECCIONADO</span>
+                        <h4 class="font-bold text-[#F4F1EA] text-base mt-1">Comercio de ejemplo</h4>
+                        <p class="text-xs text-[#696E75]">Electrodomésticos</p>
 
                         <!-- Contenedor de estrellas-->
-                        <div class="flex items-center gap-1 mt-3 text-lole-champagne text-xs">
+                        <div class="flex items-center gap-1 mt-3 text-[#E5BF85] text-xs">
                             <span>★</span>
                             <span>★</span>
                             <span>★</span>
@@ -265,8 +273,8 @@
 
                         <!-- Contenedor de datos a pie-->
                         <div class="flex justify-between items-center text-xs">
-                            <span class="text-lole-gray">Ruta a pie</span>
-                            <span class="font-bold text-white">6 min</span>
+                            <span class="text-[#696E75]">Ruta a pie</span>
+                            <span class="font-bold text-[#F4F1EA]">6 min</span>
                         </div>
                     </div>
                 </div>
@@ -811,6 +819,7 @@
             </div>    
         </div>
     </footer>
+    <script src="src/js/theme.js" defer></script>
     <script src="src/js/carousel.js" defer></script>
 </body>
 </html>

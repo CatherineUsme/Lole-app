@@ -13,7 +13,6 @@
     --container-xl: 36rem;
     --container-2xl: 42rem;
     --container-3xl: 48rem;
-    --container-6xl: 72rem;
     --container-7xl: 80rem;
     --text-xs: 0.75rem;
     --text-xs--line-height: calc(1 / 0.75);
@@ -23,8 +22,6 @@
     --text-base--line-height: calc(1.5 / 1);
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
-    --text-xl: 1.25rem;
-    --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
@@ -37,7 +34,6 @@
     --text-6xl--line-height: 1;
     --font-weight-normal: 400;
     --font-weight-medium: 500;
-    --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --tracking-widest: 0.1em;
     --leading-tight: 1.25;
@@ -256,17 +252,11 @@
   .z-50 {
     z-index: 50;
   }
-  .m-7 {
-    margin: calc(var(--spacing) * 7);
-  }
   .mx-auto {
     margin-inline: auto;
   }
   .my-3 {
     margin-block: calc(var(--spacing) * 3);
-  }
-  .my-7 {
-    margin-block: calc(var(--spacing) * 7);
   }
   .mt-1 {
     margin-top: var(--spacing);
@@ -285,12 +275,6 @@
   }
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
-  }
-  .mt-7 {
-    margin-top: calc(var(--spacing) * 7);
-  }
-  .mt-10 {
-    margin-top: calc(var(--spacing) * 10);
   }
   .mr-3 {
     margin-right: calc(var(--spacing) * 3);
@@ -441,9 +425,6 @@
   .max-w-3xl {
     max-width: var(--container-3xl);
   }
-  .max-w-6xl {
-    max-width: var(--container-6xl);
-  }
   .max-w-7xl {
     max-width: var(--container-7xl);
   }
@@ -504,9 +485,6 @@
   }
   .items-start {
     align-items: flex-start;
-  }
-  .justify-around {
-    justify-content: space-around;
   }
   .justify-between {
     justify-content: space-between;
@@ -633,6 +611,12 @@
       border-color: color-mix(in oklab, var(--color-white) 20%, transparent);
     }
   }
+  .bg-\[\#0C2448\]\/90 {
+    background-color: color-mix(in oklab, #0C2448 90%, transparent);
+  }
+  .bg-\[\#06162F\]\/50 {
+    background-color: color-mix(in oklab, #06162F 50%, transparent);
+  }
   .bg-lole-champagne {
     background-color: var(--color-lole-champagne);
   }
@@ -660,12 +644,6 @@
       background-color: color-mix(in oklab, var(--color-lole-noche) 40%, transparent);
     }
   }
-  .bg-lole-noche\/50 {
-    background-color: color-mix(in srgb, #06162F 50%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-lole-noche) 50%, transparent);
-    }
-  }
   .bg-lole-noche\/60 {
     background-color: color-mix(in srgb, #06162F 60%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -680,12 +658,6 @@
   }
   .bg-lole-profundo {
     background-color: var(--color-lole-profundo);
-  }
-  .bg-lole-profundo\/90 {
-    background-color: color-mix(in srgb, #0C2448 90%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-lole-profundo) 90%, transparent);
-    }
   }
   .bg-transparent {
     background-color: transparent;
@@ -787,14 +759,8 @@
   .py-16 {
     padding-block: calc(var(--spacing) * 16);
   }
-  .pt-2 {
-    padding-top: calc(var(--spacing) * 2);
-  }
   .pt-3 {
     padding-top: calc(var(--spacing) * 3);
-  }
-  .pt-6 {
-    padding-top: calc(var(--spacing) * 6);
   }
   .pr-4 {
     padding-right: calc(var(--spacing) * 4);
@@ -846,10 +812,6 @@
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
   }
-  .text-xl {
-    font-size: var(--text-xl);
-    line-height: var(--tw-leading, var(--text-xl--line-height));
-  }
   .text-xs {
     font-size: var(--text-xs);
     line-height: var(--tw-leading, var(--text-xs--line-height));
@@ -877,10 +839,6 @@
     --tw-font-weight: var(--font-weight-normal);
     font-weight: var(--font-weight-normal);
   }
-  .font-semibold {
-    --tw-font-weight: var(--font-weight-semibold);
-    font-weight: var(--font-weight-semibold);
-  }
   .tracking-\[0\.3em\] {
     --tw-tracking: 0.3em;
     letter-spacing: 0.3em;
@@ -892,6 +850,21 @@
   .tracking-widest {
     --tw-tracking: var(--tracking-widest);
     letter-spacing: var(--tracking-widest);
+  }
+  .text-\[\#696E75\] {
+    color: #696E75;
+  }
+  .text-\[\#E5BF85\] {
+    color: #E5BF85;
+  }
+  .text-\[\#F4F1EA\] {
+    color: #F4F1EA;
+  }
+  .text-\[\#\] {
+    color: #;
+  }
+  .text-\[\#fff\] {
+    color: #fff;
   }
   .text-lole-blanco {
     color: var(--color-lole-blanco);
@@ -907,9 +880,6 @@
     @supports (color: color-mix(in lab, red, red)) {
       color: color-mix(in oklab, var(--color-lole-blanco) 80%, transparent);
     }
-  }
-  .text-lole-bronce {
-    color: var(--color-lole-bronce);
   }
   .text-lole-champagne {
     color: var(--color-lole-champagne);
@@ -949,9 +919,6 @@
   }
   .opacity-40 {
     opacity: 40%;
-  }
-  .opacity-70 {
-    opacity: 70%;
   }
   .shadow-2xl {
     --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
@@ -1019,6 +986,14 @@
     }
     .hover\:bg-lole-bronce:hover {
       background-color: var(--color-lole-bronce);
+    }
+    .hover\:bg-lole-champagne\/10:hover {
+      background-color: color-mix(in srgb, #E5BF85 10%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-lole-champagne\/10:hover {
+        background-color: color-mix(in oklab, var(--color-lole-champagne) 10%, transparent);
+      }
     }
     .hover\:bg-lole-dorado:hover {
       background-color: var(--color-lole-dorado);
@@ -1104,9 +1079,6 @@
     .lg\:grid-cols-2 {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-    .lg\:grid-cols-4 {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
     .lg\:grid-cols-5 {
       grid-template-columns: repeat(5, minmax(0, 1fr));
     }
@@ -1131,6 +1103,13 @@
       line-height: var(--tw-leading, var(--text-6xl--line-height));
     }
   }
+}
+html.light-mode {
+  --color-lole-noche: #F4F1EA;
+  --color-lole-profundo: #FFFFFF;
+  --color-lole-blanco: #06162F;
+  --color-lole-gris: #696E75;
+  --color-lole-champagne: #0C2448;
 }
 #tiendas-track {
   scrollbar-width: none;
