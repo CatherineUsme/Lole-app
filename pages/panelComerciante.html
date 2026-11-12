@@ -1,11 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../src/output.css">
+    <title>PANEL DEL COMERCIANTE</title>
 </head>
-<body>
-    
+<body class="text-lole-blanco min-h-screen bg-lole-noche font-body selection:bg-lole-champagne">
+    <main>
+        <header class="border-b border-lole-dorado/40 bg-linear-to-r from-lole-profundo/80 to-transparent ">
+            <div class="px-6 py-12 max-w-7xl mx-auto">
+                <p class="text-xs mb-3 text-lole-champagne font-medium uppercase tracking-[0.25em]">PANEL DEL COMERCIANTE</p>
+                <h1 class="font-display font-bold text-4xl md:text-5xl text-lole-champagne mb-3">Electro Junín</h1>
+                <p class="mt-3 max-w-2xl text-base sm:text-lg text-lole-gris/80 font-body mb-8 leading-relaxed">Así te están encontrando los compradores esta semana.</p>
+            </div>
+        </header>
+
+        <section class="max-w-7xl mx-auto px-6 py-12">
+            <!-- Grid que organiza las 4 tarjetas-->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+               <!--Tarjeta 1-->
+                <article class="bg-lole-deep/60 bg-lole-profundo border border-lole-dorado/40 rounded-2xl p-6"> 
+                    <div class="flex items-center justify-between text-lole-gris">
+                        <span class="text-sm text-lole-gris">Visitas al perfil</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-lole-champagne">
+                        <path d="M10 12.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+                        <path fill-rule="evenodd" d="M.664 10.59a1.651 1.651 0 0 1 0-1.186A10.004 10.004 0 0 1 10 3c4.257 0 7.893 2.66 9.336 6.41.147.381.146.804 0 1.186A10.004 10.004 0 0 1 10 17c-4.257 0-7.893-2.66-9.336-6.41ZM14 10a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" clip-rule="evenodd" />
+                        </svg>
+                        </div>
+                        <h2 class="text-3xl font-display font-bold text-lole-blanco mt-4 leading-tight ">1.284</h2>
+                        <p class="text-xs text-emerald-400 mt-2">+18% vs. semana pasada</p>
+                </article>
+                <!--Tarjeta 2-->
+                <article class="bg-lole-deep/60 bg-lole-profundo border border-lole-dorado/40 rounded-2xl p-6"> 
+                    <div class="flex items-center justify-between text-lole-gris">
+                        <span class="text-sm text-lole-gris">Cómo llegar</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-lole-champagne">
+                        <path fill-rule="evenodd" d="m9.69 18.933.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 0 0 .281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C15.302 14.988 17 12.493 17 9A7 7 0 1 0 3 9c0 3.492 1.698 5.988 3.355 7.584a13.731 13.731 0 0 0 2.273 1.765 11.842 11.842 0 0 0 .976.544l.062.029.018.008.006.003ZM10 11.25a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <h2 class="text-3xl font-display font-bold text-lole-blanco mt-4 leading-tight ]">312</h2>
+                </article>
+                <!--Tarjeta 3-->
+                <article class="bg-lole-deep/60 bg-lole-profundo border border-lole-dorado/40 rounded-2xl p-6"> 
+                    <div class="flex items-center justify-between text-lole-gris">
+                        <span class="text-sm text-lole-gris">Puntuación</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-lole-champagne">
+                        <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <h2 class="text-3xl font-display font-bold text-lole-blanco mt-4 leading-tight ">4.6</h2>
+                </article>
+                <!--Tarjeta 4-->
+                <article class="bg-lole-deep/60 bg-lole-profundo border border-lole-dorado/40 rounded-2xl p-6"> 
+                    <div class="flex items-center justify-between text-lole-gris">
+                        <span class="text-sm text-lole-gris">Reseñas nuevas</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-lole-champagne">
+                        <path fill-rule="evenodd" d="M10 2c-2.236 0-4.43.18-6.57.524C1.993 2.755 1 4.014 1 5.426v5.148c0 1.413.993 2.67 2.43 2.902 1.168.188 2.352.327 3.55.414.28.02.521.18.642.413l1.713 3.293a.75.75 0 0 0 1.33 0l1.713-3.293a.783.783 0 0 1 .642-.413 41.102 41.102 0 0 0 3.55-.414c1.437-.231 2.43-1.49 2.43-2.902V5.426c0-1.413-.993-2.67-2.43-2.902A41.289 41.289 0 0 0 10 2ZM6.75 6a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-6.5Zm0 2.5a.75.75 0 0 0 0 1.5h3.5a.75.75 0 0 0 0-1.5h-3.5Z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <h2 class="text-3xl font-display font-bold text-lole-blanco mt-4 leading-tight ">14</h2>
+                </article>
+            </div>
+        </section>
+        <!--Contenedor visitas por dia y datos de la tienda-->
+        <section class="max-w-7xl mx-auto px-6 pb-12 flex flex-col justify-between">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+                <article class="bg-lole-deep/60 bg-lole-profundo border border-lole-dorado/40 rounded-2xl p-6 lg:col-span-7">
+                    <h2 class="font-display font-bold text-2xl text-lole-champagne">Visitas por día</h2>
+                    <div class="flex justify-around items-center w-full text-lole-gris text-xs mt-44 tracking-widest[1.5em] uppercase">
+                        <span>L</span>
+                        <span>M</span>
+                        <span>M</span>
+                        <span>J</span>
+                        <span>V</span>
+                        <span>S</span>
+                        <span>D</span>
+                    </div>
+                </article>
+        <!--contenedor datos de la tienda -->
+                <article class="bg-lole-deep/60 bg-lole-profundo border border-lole-dorado/40 rounded-2xl p-6 lg:col-span-5">
+                    <h2 class="font-display font-bold text-2xl text-lole-champagne mb-6">Datos de la tienda</h2>
+                    <form class="space-y-4 mb-4">
+                       <div>
+                            <label class="block text-xs font-medium text-white mb-1.5">
+                            <p>Nombre</p>
+                            <input class="w-full bg-lole-noche/50 border border-lole-dorado/30 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-lole-champagne" type="text" value="Electro Junín">
+                            </label>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-medium text-white mb-1.5">
+                            <p>Dirección</p>
+                            <input class="w-full bg-lole-noche/50 border border-lole-dorado/30 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-lole-champagne" type="text" value="Cra. 49 #52-30">
+                            </label>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-medium text-white mb-1.5">
+                            <p>Horario</p>
+                            <input class="w-full bg-lole-noche/50 border border-lole-dorado/30 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-lole-champagne" type="text" value="8:00am - 6:00pm">
+                            </label>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-medium text-white mb-1.5">
+                                <p>Descripción</p>
+                                <textarea class="w-full rounded-2xl px-4 py-2.5 text-sm text-white bg-lole-noche/60 border border-lole-dorado/30 focus:outline-none focus:border-lole-champagne transition" rows="3">Neveras, lavadoras y pequeños electrodomésticos con garantía.</textarea>
+                            </label>
+                        </div>
+
+                        <button class="w-full rounded-full py-3 mt-2 bg-lole-dorado text-lole-noche font-semibold text-sm hover:opacity-70 transition cursor-pointer" type="submit">Guardar cambios</button>
+                    </form>
+                </article>
+            </div>
+           
+        </section>
+    </main>
 </body>
 </html>
