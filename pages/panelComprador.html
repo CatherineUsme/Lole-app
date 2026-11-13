@@ -1,11 +1,318 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../src/output.css">
+    <title>PANEL DEL COMPRADOR</title>
 </head>
-<body>
-    
+<body class="text-lole-blanco min-h-screen bg-lole-noche font-body selection:bg-lole-champagne">
+     <header class="w-full bg-lole-noche/80 backdrop-blur-md sticky top-0 z-50 border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <span class="flex shrink-0 items-center h-20 w-auto">
+                <img class="max-h-20 w-auto object-contain" src="/img/logo.png" alt="" >
+            </span>    
+            <nav class="w-full md:w-auto">
+                <ul class="hidden md:flex justify-between items-center space-x-8 text-sm font-medium text-lole-blanco">
+                     <li><a href="../index.html" aria-current="page" class="text-lole-dorado font-semibold border-b-2 border-lole-dorado pb-1">Inicio</a></li>
+                    <li><a href="buscar.html"  class="hover:text-lole-champagne cursor-pointer transition-colors">Encuentra</a></li>
+                    <li><a href="comparar.html" class="hover:text-lole-champagne cursor-pointer transition-colors">Compara</a></li>
+                    <li><a href="personalShopper.html" class="hover:text-lole-champagne cursor-pointer transition-colors">Personal Shopper</a></li>
+                    <li><a href="panelComprador.html" class="hover:text-lole-champagne cursor-pointer transition-colors">Mi panel</a></li>
+                    <li><a href="quienesSomos.html" class="hover:text-lole-champagne cursor-pointer transition-colors">¿Quienes somos?</a></li>
+                </ul>
+            </nav>
+            <span>
+                <button class="bg-lole-dorado text-lole-noche font-bold px-6 py-2 mt-5 rounded-full hover:bg-lole-bronce cursor-pointer transition-colors -translate-y-2">Ingresar</button>
+            </span>
+            <button id="theme-toggle"type="button" aria-label="Activar modo claro" aria-pressed="false" class="border border-lole-champagne text-lole-champagne rounded-full p-2 hover:bg-lole-champagne/10 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none"viewBox="0 0 24 24" stroke-width="1.5"stroke="currentColor" class="size-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-6.364-2.636 1.591-1.591M3 12h2.25m.386-6.364 1.591 1.591M16.5 12a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Z"/>
+                </svg>
+            </button>
+        </div>
+    </header>
+    <main>
+        <header class="border-b border-lole-dorado/40 bg-linear-to-r from-lole-profundo/80 to-transparent">
+            <div class="px-6 py-12 max-w-7xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+                <div>
+                    <p class="text-xs mb-3 text-lole-champagne font-medium uppercase tracking-[0.25em]">PANEL DEL COMPRADOR</p>
+                    <h1 class="font-display font-bold text-4xl md:text-5xl text-lole-champagne mb-3">Hola, Bienvenido</h1>
+                    <p class="mt-3 max-w-2xl text-base sm:text-lg text-lole-gris/80 font-body mb-8 leading-relaxed">Tus pedidos y lugares favoritos del centro.</p>
+                </div>
+                <div class="shrink-0">
+                    <a href="panelComerciante.html" class="bg-lole-champagne text-lole-noche font-semibold text-xs sm:text-sm px-6 py-2.5 rounded-full hover:opacity-90 transition shadow-lg shadow-lole-champagne/20 inline-flex items-center gap-2">
+                        Soy comerciante
+                    </a>
+                </div>
+            </div>
+            
+        </header>
+
+        <section class="max-w-7xl mx-auto px-6 py-12">
+            <!-- Grid que organiza las 4 tarjetas-->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!--Tarjeta 1-->
+                <article class="bg-lole-deep/60 bg-lole-profundo border border-lole-dorado/40 rounded-2xl p-6"> 
+                    <div class="flex items-center justify-between text-lole-gris">
+                        <span class="text-sm text-lole-gris">Pedidos activos</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-lole-champagne">
+                            <path d="M2 3a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H2Z" />
+                            <path fill-rule="evenodd" d="M2 7.5h16l-.811 7.71a2 2 0 0 1-1.99 1.79H4.802a2 2 0 0 1-1.99-1.79L2 7.5ZM7 11a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2H8a1 1 0 0 1-1-1Z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <h2 class="text-3xl font-display font-bold text-lole-blanco mt-4 leading-tight">2</h2>
+                </article>
+
+                <!--Tarjeta 2-->
+                <article class="bg-lole-deep/60 bg-lole-profundo border border-lole-dorado/40 rounded-2xl p-6"> 
+                    <div class="flex items-center justify-between text-lole-gris">
+                        <span class="text-sm text-lole-gris">Favoritos</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-lole-champagne">
+                            <path d="m9.653 16.915-.005-.003-.019-.01a20.759 20.759 0 0 1-1.162-.682 22.045 22.045 0 0 1-2.582-1.9C4.045 12.733 2 10.352 2 7.5a4.5 4.5 0 0 1 8-2.828A4.5 4.5 0 0 1 18 7.5c0 2.852-2.044 5.233-3.885 6.82a22.049 22.049 0 0 1-3.744 2.582l-.019.01-.005.003h-.002a.739.739 0 0 1-.69.001l-.002-.001Z" />
+                        </svg>
+                    </div>
+                    <h2 class="text-3xl font-display font-bold text-lole-blanco mt-4 leading-tight">7</h2>
+                </article>
+
+                <!--Tarjeta 3-->
+                <article class="bg-lole-deep/60 bg-lole-profundo border border-lole-dorado/40 rounded-2xl p-6"> 
+                    <div class="flex items-center justify-between text-lole-gris">
+                        <span class="text-sm text-lole-gris">Búsquedas</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-lole-champagne">
+                            <path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11ZM2 9a7 7 0 1 1 12.452 4.391l3.328 3.329a.75.75 0 1 1-1.06 1.06l-3.329-3.328A7 7 0 0 1 2 9Z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <h2 class="text-3xl font-display font-bold text-lole-blanco mt-4 leading-tight">23</h2>
+                </article>
+
+                <!--Tarjeta 4-->
+                <article class="bg-lole-deep/60 bg-lole-profundo border border-lole-dorado/40 rounded-2xl p-6"> 
+                    <div class="flex items-center justify-between text-lole-gris">
+                        <span class="text-sm text-lole-gris">Ahorro estimado</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-lole-champagne">
+                            <path d="M10.75 10.818v2.614A3.13 3.13 0 0 0 11.888 13c.482-.315.612-.648.612-.875 0-.227-.13-.56-.612-.875a3.13 3.13 0 0 0-1.138-.432ZM8.33 8.62c.053.055.115.11.184.164.208.16.46.284.736.363V6.603a2.45 2.45 0 0 0-.35.13c-.14.065-.27.143-.386.233-.377.292-.514.627-.514.909 0 .184.058.39.202.592.037.051.08.102.128.152Z" />
+                            <path fill-rule="evenodd" d="M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0Zm-8-6a.75.75 0 0 1 .75.75v.316a3.78 3.78 0 0 1 1.653.713c.426.33.744.74.925 1.2a.75.75 0 0 1-1.395.55 1.35 1.35 0 0 0-.447-.563 2.187 2.187 0 0 0-.736-.363V9.3c.698.093 1.383.32 1.959.696.787.514 1.29 1.27 1.29 2.13 0 .86-.504 1.616-1.29 2.13-.576.377-1.261.603-1.96.696v.299a.75.75 0 1 1-1.5 0v-.3c-.697-.092-1.382-.318-1.958-.695-.482-.315-.857-.717-1.078-1.188a.75.75 0 1 1 1.359-.636c.08.173.245.376.54.569.313.205.706.353 1.138.432v-2.748a3.782 3.782 0 0 1-1.653-.713C6.9 9.433 6.5 8.681 6.5 7.875c0-.805.4-1.558 1.097-2.096a3.78 3.78 0 0 1 1.653-.713V4.75A.75.75 0 0 1 10 4Z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <h2 class="text-3xl font-display font-bold text-lole-blanco mt-4 leading-tight">$84.000</h2>
+                    <p class="text-xs text-emerald-400 mt-2">+12% este mes</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección de mis solicitudes -->
+        <section class="max-w-7xl mx-auto px-6 py-12">
+            <article class="bg-lole-profundo border border-lole-dorado/40 rounded-3xl p-8 shadow-xl">
+                
+                <!-- Cabecera interna: Título y Botón -->
+                <div class="flex items-center justify-between mb-8">
+                    <h2 class="font-display font-bold text-2xl text-lole-champagne">Mis solicitudes</h2>
+                    <button class="bg-lole-dorado text-lole-noche font-semibold text-sm px-6 py-2.5 rounded-full hover:opacity-90 transition shadow-lg shadow-lole-dorado/20 cursor-pointer">
+                        Nueva solicitud
+                    </button>
+                </div>
+
+                <!-- Contenedor con scroll para móviles -->
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <!-- Títulos de la tabla -->
+                        <thead>
+                            <tr class="border-b border-lole-dorado/40 text-xs font-semibold text-lole-gris uppercase tracking-wider">
+                                <th class="py-4 px-3">ID</th>
+                                <th class="py-4 px-3">Producto</th>
+                                <th class="py-4 px-3">Shopper</th>
+                                <th class="py-4 px-3">Tarifa</th>
+                                <th class="py-4 px-3">Estado</th>
+                            </tr>
+                        </thead>
+
+                        <!-- Cuerpo de la tabla -->
+                        <tbody class="divide-y divide-lole-dorado/20">
+                            <!-- Fila 1 -->
+                            <tr class="hover:bg-white/5 transition">
+                                <td class="py-4 px-3 text-xs font-semibold text-lole-champagne">SR-1042</td>
+                                <td class="py-4 px-3 text-xs font-medium text-white">Licuadora 10 velocidades</td>
+                                <td class="py-4 px-3 text-xs text-white/80">Camila R.</td>
+                                <td class="py-4 px-3 text-xs font-medium text-white">$15.000</td>
+                                <td class="py-4 px-3 text-xs">
+                                    <span class="px-3 py-1 rounded-full text-xs font-medium bg-white/10 text-lole-champagne">
+                                        En camino
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <!-- Fila 2 -->
+                            <tr class="hover:bg-white/5 transition">
+                                <td class="py-4 px-3 text-xs font-semibold text-lole-champagne">SR-1043</td>
+                                <td class="py-4 px-3 text-xs font-medium text-white">Tenis talla 38 cuero blanco</td>
+                                <td class="py-4 px-3 text-xs text-white/80">—</td>
+                                <td class="py-4 px-3 text-xs font-medium text-white">$12.000</td>
+                                <td class="py-4 px-3 text-xs">
+                                    <span class="px-3 py-1 rounded-full text-xs font-medium bg-amber-500/15 text-amber-400">
+                                        Abierta
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <!-- Fila 3 -->
+                            <tr class="hover:bg-white/5 transition">
+                                <td class="py-4 px-3 text-xs font-semibold text-lole-champagne">SR-1039</td>
+                                <td class="py-4 px-3 text-xs font-medium text-white">Útiles escolares (Lista 3°)</td>
+                                <td class="py-4 px-3 text-xs text-white/80">Andrés P.</td>
+                                <td class="py-4 px-3 text-xs font-medium text-white">$10.000</td>
+                                <td class="py-4 px-3 text-xs">
+                                    <span class="px-3 py-1 rounded-full text-xs font-medium bg-emerald-500/15 text-emerald-400">
+                                        Entregada
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </article>
+        </section>
+
+        <!-- Sección de tiendas favoritas -->
+        <section class="max-w-7xl mx-auto px-6 py-12">
+            <!-- Título fuera del grid -->
+            <h2 class="font-display font-bold text-2xl text-lole-champagne mb-6">Tiendas favoritas</h2>
+
+            <!-- Grid de 3 columnas -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Tarjeta 1: Electro Junín -->
+                <article class="bg-lole-deep/60 bg-lole-profundo border border-lole-dorado/40 rounded-2xl p-6 flex flex-col justify-between">
+                    <div>
+                        <!-- Cabecera de la tarjeta: Nombre y Rating -->
+                        <div class="flex items-start justify-between mb-2">
+                            <h3 class="text-sm font-semibold text-white flex items-center gap-1.5">
+                                Electro Junín
+                                <!-- Ícono de verificado -->
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4 text-lole-champagne shrink-0">
+                                    <path fill-rule="evenodd" d="M15 8c0 .982-.472 1.854-1.202 2.402a2.995 2.995 0 0 1-.848 2.547 2.995 2.995 0 0 1-2.548.849A2.996 2.996 0 0 1 8 15a2.996 2.996 0 0 1-2.402-1.202 2.995 2.995 0 0 1-2.547-.848 2.995 2.995 0 0 1-.849-2.548A2.996 2.996 0 0 1 1 8c0-.982.472-1.854 1.202-2.402a2.995 2.995 0 0 1 .848-2.547 2.995 2.995 0 0 1 2.548-.849A2.995 2.995 0 0 1 8 1c.982 0 1.854.472 2.402 1.202a2.995 2.995 0 0 1 2.547.848c.695.695.978 1.645.849 2.548A2.996 2.996 0 0 1 15 8Zm-3.291-2.843a.75.75 0 0 1 .135 1.052l-4.25 5.5a.75.75 0 0 1-1.151.043l-2.25-2.5a.75.75 0 1 1 1.114-1.004l1.65 1.832 3.7-4.789a.75.75 0 0 1 1.052-.134Z" clip-rule="evenodd" />
+                                </svg>
+                            </h3>
+                            <!-- Puntuación -->
+                            <span class="bg-lole-champagne/15 text-lole-dorado text-xs font-bold px-2.5 py-1 rounded-full flex items-center gap-1 shrink-0">
+                                ★ 9.1
+                            </span>
+                        </div>
+
+                        <!-- Dirección -->
+                        <p class="text-xs text-lole-gris flex items-center gap-1 mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-3.5 h-3.5 shrink-0">
+                                <path fill-rule="evenodd" d="m9.69 18.933.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 0 0 .281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C15.302 14.988 17 12.493 17 9A7 7 0 1 0 3 9c0 3.492 1.698 5.988 3.355 7.584a13.731 13.731 0 0 0 2.273 1.765 11.842 11.842 0 0 0 .976.544l.062.029.018.008.006.003ZM10 11.25a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z" clip-rule="evenodd" />
+                            </svg>
+                            Cra. 49 #52-30 · Junín
+                        </p>
+                    </div>
+
+                    <!-- Etiquetas inferiores (Tags) -->
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-lole-champagne/15 bg-white/5 border border-white/10 px-3 py-1 rounded-full text-xs text-lole-dorado font-medium">$$</span>
+                        <span class="bg-lole-champagne/15 bg-white/5 border border-white/10 px-3 py-1 rounded-full text-xs text-lole-dorado">Garantía 1 año</span>
+                        <span class="bg-lole-champagne/15 bg-white/5 border border-white/10 px-3 py-1 rounded-full text-xs text-lole-dorado">Domicilio</span>
+                    </div>
+                </article>
+
+                <!-- Tarjeta 2: Hogar & Más Carabobo -->
+                <article class="bg-lole-deep/60 bg-lole-profundo border border-lole-dorado/40 rounded-2xl p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-start justify-between mb-2">
+                            <h3 class="text-sm font-semibold text-white flex items-center gap-1.5">
+                                Hogar & Más Carabobo
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4 text-lole-champagne shrink-0">
+                                    <path fill-rule="evenodd" d="M15 8c0 .982-.472 1.854-1.202 2.402a2.995 2.995 0 0 1-.848 2.547 2.995 2.995 0 0 1-2.548.849A2.996 2.996 0 0 1 8 15a2.996 2.996 0 0 1-2.402-1.202 2.995 2.995 0 0 1-2.547-.848 2.995 2.995 0 0 1-.849-2.548A2.996 2.996 0 0 1 1 8c0-.982.472-1.854 1.202-2.402a2.995 2.995 0 0 1 .848-2.547 2.995 2.995 0 0 1 2.548-.849A2.995 2.995 0 0 1 8 1c.982 0 1.854.472 2.402 1.202a2.995 2.995 0 0 1 2.547.848c.695.695.978 1.645.849 2.548A2.996 2.996 0 0 1 15 8Zm-3.291-2.843a.75.75 0 0 1 .135 1.052l-4.25 5.5a.75.75 0 0 1-1.151.043l-2.25-2.5a.75.75 0 1 1 1.114-1.004l1.65 1.832 3.7-4.789a.75.75 0 0 1 1.052-.134Z" clip-rule="evenodd" />
+                                </svg>
+                            </h3>
+                            <span class="bg-lole-champagne/15 text-lole-dorado text-xs font-bold px-2.5 py-1 rounded-full flex items-center gap-1 shrink-0">
+                                ★ 8.9
+                            </span>
+                        </div>
+                        <p class="text-xs text-lole-gris flex items-center gap-1 mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-3.5 h-3.5 shrink-0">
+                                <path fill-rule="evenodd" d="m9.69 18.933.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 0 0 .281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C15.302 14.988 17 12.493 17 9A7 7 0 1 0 3 9c0 3.492 1.698 5.988 3.355 7.584a13.731 13.731 0 0 0 2.273 1.765 11.842 11.842 0 0 0 .976.544l.062.029.018.008.006.003ZM10 11.25a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z" clip-rule="evenodd" />
+                            </svg>
+                            Cra. 52 #50-12 · Carabobo
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-lole-champagne/15 bg-white/5 border border-white/10 px-3 py-1 rounded-full text-xs text-lole-dorado font-medium">$</span>
+                        <span class="bg-lole-champagne/15 bg-white/5 border border-white/10 px-3 py-1 rounded-full text-xs text-lole-dorado">Mejor precio</span>
+                        <span class="bg-lole-champagne/15 bg-white/5 border border-white/10 px-3 py-1 rounded-full text-xs text-lole-dorado">Crédito</span>
+                    </div>
+                </article>
+
+                <!-- Tarjeta 3: Megaeléctricos San Juan -->
+                <article class="bg-lole-deep/60 bg-lole-profundo border border-lole-dorado/40 rounded-2xl p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-start justify-between mb-2">
+                            <h3 class="text-sm font-semibold text-white flex items-center gap-1.5">
+                                Megaeléctricos San Juan
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4 text-lole-champagne shrink-0">
+                                    <path fill-rule="evenodd" d="M15 8c0 .982-.472 1.854-1.202 2.402a2.995 2.995 0 0 1-.848 2.547 2.995 2.995 0 0 1-2.548.849A2.996 2.996 0 0 1 8 15a2.996 2.996 0 0 1-2.402-1.202 2.995 2.995 0 0 1-2.547-.848 2.995 2.995 0 0 1-.849-2.548A2.996 2.996 0 0 1 1 8c0-.982.472-1.854 1.202-2.402a2.995 2.995 0 0 1 .848-2.547 2.995 2.995 0 0 1 2.548-.849A2.995 2.995 0 0 1 8 1c.982 0 1.854.472 2.402 1.202a2.995 2.995 0 0 1 2.547.848c.695.695.978 1.645.849 2.548A2.996 2.996 0 0 1 15 8Zm-3.291-2.843a.75.75 0 0 1 .135 1.052l-4.25 5.5a.75.75 0 0 1-1.151.043l-2.25-2.5a.75.75 0 1 1 1.114-1.004l1.65 1.832 3.7-4.789a.75.75 0 0 1 1.052-.134Z" clip-rule="evenodd" />
+                                </svg>
+                            </h3>
+                            <span class="bg-lole-champagne/15 text-lole-champagne text-xs font-bold px-2.5 py-1 rounded-full flex items-center gap-1 shrink-0">
+                                ★ 8.6
+                            </span>
+                        </div>
+                        <p class="text-xs text-lole-gris flex items-center gap-1 mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-3.5 h-3.5 shrink-0">
+                                <path fill-rule="evenodd" d="m9.69 18.933.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 0 0 .281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C15.302 14.988 17 12.493 17 9A7 7 0 1 0 3 9c0 3.492 1.698 5.988 3.355 7.584a13.731 13.731 0 0 0 2.273 1.765 11.842 11.842 0 0 0 .976.544l.062.029.018.008.006.003ZM10 11.25a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z" clip-rule="evenodd" />
+                            </svg>
+                            Cl. 44 #51-20 · San Juan
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-lole-champagne/15 bg-white/5 border border-white/10 px-3 py-1 rounded-full text-xs text-lole-dorado font-medium">$$$</span>
+                        <span class="bg-lole-champagne/15 bg-white/5 border border-white/10 px-3 py-1 rounded-full text-xs text-lole-dorado">Alta gama</span>
+                        <span class="bg-lole-champagne/15 bg-white/5 border border-white/10 px-3 py-1 rounded-full text-xs text-lole-dorado">Instalación</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="bg-lole-navy py-10">
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6 px-4 max-w-7xl mx-auto mb-10">
+                <div>
+                    <span class="flex shrink-0 items-center h-20 w-auto">
+                        <img class="max-h-20 w-auto object-contain" src="/img/logo.png" alt="" >
+                    </span>  
+                    <h5 class="text-lole-cream text-lg mt-2 font-body">El centro, mas cerca de ti.</h5>
+                    <p class="font-body text-lole-cream mt-2 text-xs">Comercios del centro de medellin y personal shoppers, en una sola plataforma</p>
+                </div>
+                <div>
+                    <h4 class="text-lole-gold font-display mb-3 tracking-widest">Navegacion</h4>
+                    <ul class="space-y-2 text-sm text-lole-cream/80">
+                        <li><a href=index.html aria-current="page" class="text-lole-dorado font-semibold border-b-2 border-lole-dorado pb-1">Inicio</a></li>
+                        <li><a href=pages/buscar.html  class="hover:text-lole-champagne cursor-pointer transition-colors">Encuentra</a></li>
+                        <li><a href="pages/comparar.html" class="hover:text-lole-champagne cursor-pointer transition-colors">Compara</a></li>
+                        <li><a href="pages/personalShopper.html" class="hover:text-lole-champagne cursor-pointer transition-colors">Personal Shopper</a></li>
+                        <li><a href="pages/panelComprador.html" class="hover:text-lole-champagne cursor-pointer transition-colors">Mi panel</a></li>
+                        <li><a href="pages/quienesSomos.html" class="hover:text-lole-champagne cursor-pointer transition-colors">¿Quienes somos?</a></li>
+                    </ul>
+                </div>  
+                <div>
+                    <h4 class="text-lole-gold font-display mb-3 tracking-widest">contacto</h4>
+                    <ul class="space-y-2 text-sm text-lole-cream/80 font-body">
+                        <li> ✉️Correo: proximamente</li>
+                        <li> 📞Telefono: proximamente</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t"></div>
+            <div class="px-4 pt-3 flex justify-between">
+                <p class="text-lole-cream text-sm ">© 2026 Lole. Todos los derechos reservados.</p>
+                <div class="flex gap-6 ">
+                    <p class="text-lole-cream text-sm mt-2">Politica de Privacidad</p>
+                    <p class="text-lole-cream text-sm mt-2">Terminos y Condiciones</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
