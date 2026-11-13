@@ -20,12 +20,14 @@
 }
 /* Modo claro */
 html.light-mode {
-    --color-lole-noche: #F4F1EA;
-    --color-lole-profundo: #FFFFFF;
+    --color-lole-noche: #EAE3D5;
+    --color-lole-profundo: #F7F4ED;
     --color-lole-blanco: #06162F;
-    --color-lole-gris: #696E75;
+    --color-lole-gris: #4A5568;
     
     --color-lole-champagne: #0C2448;
+    --color-lole-dorado: #C87D16;
+    --color-lole-bronce: #9E6314;
 }
 
 /* Index: barra desplazamiento carrusel */

@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../src/output.css">
     <title>PANEL DEL COMPRADOR</title>
+    <!-- Google Fonts: DM Serif Display + Fira Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Fira+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/output.css">
 </head>
 <body class="text-lole-blanco min-h-screen bg-lole-noche font-body selection:bg-lole-champagne">
      <header class="w-full bg-lole-noche/80 backdrop-blur-md sticky top-0 z-50 border-b border-white/5">
@@ -14,11 +18,11 @@
             </span>    
             <nav class="w-full md:w-auto">
                 <ul class="hidden md:flex justify-between items-center space-x-8 text-sm font-medium text-lole-blanco">
-                     <li><a href="../index.html" aria-current="page" class="text-lole-dorado font-semibold border-b-2 border-lole-dorado pb-1">Inicio</a></li>
+                     <li><a href="../index.html" class="hover:text-lole-champagne cursor-pointer transition-colors">Inicio</a></li>
                     <li><a href="buscar.html"  class="hover:text-lole-champagne cursor-pointer transition-colors">Encuentra</a></li>
                     <li><a href="comparar.html" class="hover:text-lole-champagne cursor-pointer transition-colors">Compara</a></li>
                     <li><a href="personalShopper.html" class="hover:text-lole-champagne cursor-pointer transition-colors">Personal Shopper</a></li>
-                    <li><a href="panelComprador.html" class="hover:text-lole-champagne cursor-pointer transition-colors">Mi panel</a></li>
+                    <li><a href="panelComprador.html" aria-current="page" class="text-lole-dorado font-semibold border-b-2 border-lole-dorado pb-1 "hover:text-lole-champagne cursor-pointer transition-colors">Mi panel</a></li>
                     <li><a href="quienesSomos.html" class="hover:text-lole-champagne cursor-pointer transition-colors">¿Quienes somos?</a></li>
                 </ul>
             </nav>
@@ -37,11 +41,11 @@
             <div class="px-6 py-12 max-w-7xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-6">
                 <div>
                     <p class="text-xs mb-3 text-lole-champagne font-medium uppercase tracking-[0.25em]">PANEL DEL COMPRADOR</p>
-                    <h1 class="font-display font-bold text-4xl md:text-5xl text-lole-champagne mb-3">Hola, Bienvenido</h1>
-                    <p class="mt-3 max-w-2xl text-base sm:text-lg text-lole-gris/80 font-body mb-8 leading-relaxed">Tus pedidos y lugares favoritos del centro.</p>
+                    <h1 class="font-display font-normal text-3xl sm:text-4xl lg:text-5xl text-lole-dorado mb-3 leading-tight">Hola, Bienvenido</h1>
+                    <p class="mt-3 max-w-2xl text-base  text-lole-gris/80 font-body mb-8 leading-relaxed">Tus pedidos y lugares favoritos del centro.</p>
                 </div>
                 <div class="shrink-0">
-                    <a href="panelComerciante.html" class="bg-lole-champagne text-lole-noche font-semibold text-xs sm:text-sm px-6 py-2.5 rounded-full hover:opacity-90 transition shadow-lg shadow-lole-champagne/20 inline-flex items-center gap-2">
+                    <a href="panelComerciante.html" class="bg-lole-dorado text-lole-noche font-semibold text-xs sm:text-sm px-6 py-2.5 rounded-full hover:opacity-90 transition shadow-lg shadow-lole-champagne/20 inline-flex items-center gap-2">
                         Soy comerciante
                     </a>
                 </div>
@@ -288,12 +292,12 @@
                 <div>
                     <h4 class="text-lole-gold font-display mb-3 tracking-widest">Navegacion</h4>
                     <ul class="space-y-2 text-sm text-lole-cream/80">
-                        <li><a href=index.html aria-current="page" class="text-lole-dorado font-semibold border-b-2 border-lole-dorado pb-1">Inicio</a></li>
-                        <li><a href=pages/buscar.html  class="hover:text-lole-champagne cursor-pointer transition-colors">Encuentra</a></li>
-                        <li><a href="pages/comparar.html" class="hover:text-lole-champagne cursor-pointer transition-colors">Compara</a></li>
-                        <li><a href="pages/personalShopper.html" class="hover:text-lole-champagne cursor-pointer transition-colors">Personal Shopper</a></li>
-                        <li><a href="pages/panelComprador.html" class="hover:text-lole-champagne cursor-pointer transition-colors">Mi panel</a></li>
-                        <li><a href="pages/quienesSomos.html" class="hover:text-lole-champagne cursor-pointer transition-colors">¿Quienes somos?</a></li>
+                        <li><a href=../index.html class="hover:text-lole-champagne cursor-pointer transition-colors"">Inicio</a></li>
+                        <li><a href="buscar.html"  class="hover:text-lole-champagne cursor-pointer transition-colors">Encuentra</a></li>
+                        <li><a href="comparar.html" class="hover:text-lole-champagne cursor-pointer transition-colors">Compara</a></li>
+                        <li><a href="personalShopper.html" class="hover:text-lole-champagne cursor-pointer transition-colors">Personal Shopper</a></li>
+                        <li><a href="panelComprador.html" aria-current="page" class="text-lole-dorado font-semibold border-b-2 border-lole-dorado pb-1 hover:text-lole-champagne cursor-pointer transition-colors">Mi panel</a></li>
+                        <li><a href="quienesSomos.html" class="hover:text-lole-champagne cursor-pointer transition-colors">¿Quienes somos?</a></li>
                     </ul>
                 </div>  
                 <div>
@@ -314,5 +318,6 @@
             </div>
         </div>
     </footer>
+    <script src="../src/js/theme.js" defer></script>
 </body>
 </html>
