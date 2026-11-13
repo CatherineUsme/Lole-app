@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Shoper|Lole-app </title>
+
+    <!-- Google Fonts: DM Serif Display + Fira Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Fira+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS compilado -->
+    <link href="/src/output.css" rel="stylesheet">
+    
+</head>
+<body class="text-lole-blanco min-h-screen bg-lole-noche font-body selection:bg-lole-champagne">
+
+    <!-- NAVBAR SUPERIOR (Consistente con el resto de Lole-app) -->
+    <header class="w-full bg-lole-noche/80 backdrop-blur-md sticky top-0 z-50 border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="../index.html" class="flex shrink-0 items-center h-20 w-auto">
+                <img class="max-h-20 w-auto object-contain" src="../img/logo.png" alt="Logo Lole-app">
+            </a>
+
+            <nav class="w-full md:w-auto">
+                <ul class="hidden md:flex justify-between items-center space-x-8 text-sm font-medium text-lole-blanco">
+                    <li><a href="../index.html" class="hover:text-lole-champagne transition-colors">Inicio</a></li>
+                    <li><a href="./buscar.html" class="hover:text-lole-champagne transition-colors">Encuentra</a></li>
+                    <li><a href="./comparar.html" class="hover:text-lole-champagne transition-colors">Compara</a></li>
+                    <li><a href="./personalShopper.html" aria-current="page" class="text-lole-dorado font-semibold border-b-2 border-lole-dorado pb-1">Personal Shopper</a></li>
+                    <li><a href="./panelComprador.html" class="hover:text-lole-champagne transition-colors">Mi panel</a></li>
+                    <li><a href="./quienesSomos.html" class="hover:text-lole-champagne transition-colors">¿Quiénes somos?</a></li>
+                </ul>
+            </nav>
+
+            <div class="flex items-center gap-3">
+                <a href="./pages/panelComerciante.html" class="bg-lole-dorado text-lole-noche font-bold px-6 py-2 rounded-full hover:bg-lole-bronce transition-colors text-sm">
+                    Soy comerciante
+                </a>
+                <button id="theme-toggle" type="button" aria-label="Activar modo claro" aria-pressed="false" class="border border-lole-champagne text-lole-champagne rounded-full p-2 hover:bg-lole-champagne/10 transition-colors cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-6.364-2.636 1.591-1.591M3 12h2.25m.386-6.364 1.591 1.591M16.5 12a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL DEL PERFIL -->
+    <main class="max-w-7xl mx-auto px-6 py-8 md:py-12">
+
+        <!-- Enlace superior de regreso -->
+        <div class="mb-8">
+            <a href="./pages/personalShopper.html" class="inline-flex items-center gap-2 text-sm text-lole-gris hover:text-lole-champagne transition-colors">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+                </svg>
+                <span>Shoppers disponibles</span>
+            </a>
+        </div>
+
+        <!-- GRID PRINCIPAL EN 2 COLUMNAS (Información izquierda + Imagen derecha) -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+
+            <!-- COLUMNA IZQUIERDA (7 columnas en escritorio) -->
+            <section class="lg:col-span-7 flex flex-col">
+
+                <!-- Subtítulo superior en mayúsculas -->
+                <p class="text-xs font-medium tracking-[0.25em] text-lole-dorado uppercase mb-3">
+                    PERSONAL SHOPPER · NIVEL LEYENDA DEL HUECO
+                </p>
+
+                <!-- Nombre principal + Insignia de verificado -->
+                <div class="flex items-center gap-3.5 mb-4">
+                    <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-normal text-lole-champagne leading-none">
+                        Emanuel Lopez
+                    </h1>
+                    <!-- Sello de verificación estilo roseta -->
+                    <svg class="w-8 h-8 text-lole-champagne shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" title="Shopper Verificado">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+                    </svg>
+                </div>
+
+                <!-- Descripción graciosa (Easter Egg) -->
+                <p class="text-base sm:text-lg text-lole-blanco/90 font-body leading-relaxed max-w-xl mb-6">
+                    Cinturón negro en regateo con "rebajita incluida", GPS humano entre Carabobo y Junín, y capaz de encontrar un tornillo específico en El Hueco en menos de 4 minutos. Incluye Guardias. <span class="text-lole-champagne italic">(Advertencia: puede regresar con empanadas extra para el camino).</span>
+                </p>
+
+                <!-- Fila de Puntuación y Estadísticas -->
+                <div class="flex flex-wrap items-center gap-3 text-sm text-lole-gris mb-8">
+                    <span class="inline-flex items-center gap-1.5 bg-lole-profundo border border-white/10 text-lole-dorado font-bold px-3.5 py-1 rounded-full">
+                        <svg class="w-4 h-4 fill-lole-dorado" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        9.9
+                    </span>
+                    <span>412 encargos · Regateo 5.0 · Velocidad 4.9</span>
+                </div>
+
+                <!-- 3 Tarjetas de Datos Rápidos (Idénticas a la imagen de referencia) -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5 mb-8">
+                    
+                    <!-- Tarjeta 1: Zona -->
+                    <div class="bg-lole-profundo border border-white/10 rounded-2xl p-4 flex flex-col justify-between">
+                        <svg class="w-5 h-5 text-lole-champagne mb-3" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                        </svg>
+                        <p class="text-sm font-medium text-lole-blanco">Junín · El Hueco</p>
+                    </div>
+
+                    <!-- Tarjeta 2: Horario -->
+                    <div class="bg-lole-profundo border border-white/10 rounded-2xl p-4 flex flex-col justify-between">
+                        <svg class="w-5 h-5 text-lole-champagne mb-3" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        <p class="text-sm font-medium text-lole-blanco">8:00 – 19:00</p>
+                    </div>
+
+                    <!-- Tarjeta 3: Contacto / Especialidad -->
+                    <div class="bg-lole-profundo border border-white/10 rounded-2xl p-4 flex flex-col justify-between">
+                        <svg class="w-5 h-5 text-lole-champagne mb-3" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                        </svg>
+                        <p class="text-sm font-medium text-lole-blanco">300 555 0101</p>
+                    </div>
+
+                </div>
+
+                <!-- Botones de Acción (Misma jerarquía visual que la imagen) -->
+                <div class="flex flex-wrap items-center gap-4">
+                    <button type="button" class="bg-lole-dorado hover:bg-lole-bronce text-lole-noche font-bold text-sm px-15 py-3.5 rounded-full transition-all shadow-lg shadow-lole-dorado/20 cursor-pointer">
+                        Solicitar compra a Emanuel
+                    </button>
+
+                    <button type="button" class="inline-flex items-center gap-2.5 bg-transparent hover:bg-lole-profundo text-lole-champagne border border-lole-champagne/40 hover:border-lole-champagne font-medium text-sm px-7 py-3.5 rounded-full transition-all cursor-pointer">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                        </svg>
+                        <span>Ver historial de hallazgos</span>
+                    </button>
+                </div>
+
+            </section>
+
+            <!-- COLUMNA DERECHA: Tarjeta de Imagen -->
+            <section class="lg:col-span-5">
+                <div class="relative w-full h-[380px] sm:h-[440px] rounded-3xl overflow-hidden border border-white/15 bg-lole-profundo shadow-2xl group">
+                    
+                    <!-- Fotografía de Emanuel (reemplaza /img/emanuel.jpg por tu archivo real) -->
+                    <img 
+                        src="../img/Emanuel.jpeg" 
+                        alt="Emanuel - Personal Shopper en el Centro de Medellín" 
+                        class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                    />
+
+                    <!-- Degradado inferior sutil para que el badge flote con buen contraste -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-lole-noche/90 via-transparent to-transparent"></div>
+
+                    <!-- Badge flotante inferior estilo tarjeta de mapa -->
+                    <div class="absolute bottom-5 left-5 right-5 flex items-center justify-between bg-lole-profundo/90 backdrop-blur-md border border-lole-champagne/40 rounded-2xl px-4 py-3">
+                        <div class="flex items-center gap-3">
+                            <span class="w-8 h-8 rounded-full bg-lole-dorado text-lole-noche font-bold text-sm flex items-center justify-center shrink-0">
+                                #1
+                            </span>
+                            <div>
+                                <p class="text-sm font-bold text-lole-blanco leading-tight">Emanuel · Shopper Oficial</p>
+                                <p class="text-xs text-lole-gris">Disponible ahora en el centro</p>
+                            </div>
+                        </div>
+                        <span class="inline-flex items-center gap-1 text-xs font-bold text-lole-dorado bg-lole-noche/80 px-2.5 py-1 rounded-full">
+                            ★ 9.9
+                        </span>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Script de tema claro/oscuro existente -->
+    <script src="/src/js/theme.js" defer></script>
+
+</body>
+</html>
