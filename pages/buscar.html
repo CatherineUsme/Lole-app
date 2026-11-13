@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Fira+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     
+    <!-- Estilo Libreria de mapas Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
     <!-- conexion con Tailwind CSS -->
     <link href="/src/output.css" rel="stylesheet">
 
@@ -20,8 +23,8 @@
             </span>    
             <nav class="w-full md:w-auto">
                 <ul class="hidden md:flex justify-between items-center space-x-8 text-sm font-medium text-lole-blanco">
-                    <li><a href="../index.html"  class="text-lole-dorado font-semibold border-b-2 border-lole-dorado pb-1">Inicio</a></li>
-                    <li><a href="buscar.html" aria-current="page" class="hover:text-lole-champagne cursor-pointer transition-colors">Encuentra</a></li>
+                    <li><a href="../index.html"  class="hover:text-lole-champagne cursor-pointer transition-colors">Inicio</a></li>
+                    <li><a href="buscar.html" aria-current="page" class="text-lole-dorado font-semibold border-b-2 border-lole-dorado pb-1 hover:text-lole-champagne cursor-pointer transition-colors">Encuentra</a></li>
                     <li><a href="comparar.html" class="hover:text-lole-champagne cursor-pointer transition-colors">Compara</a></li>
                     <li><a href="personalShopper.html" class="hover:text-lole-champagne cursor-pointer transition-colors">Personal Shopper</a></li>
                     <li><a href="panelComprador.html" class="hover:text-lole-champagne cursor-pointer transition-colors">Mi panel</a></li>
@@ -38,12 +41,69 @@
             </button>
         </div>
     </header>
-    <main>
+    <main class="max-w-7xl mx-auto px-6 py-8">
 
+        <!-- Barra buscadora -->
+        <section class="mb-5">
+            <form id="form-busqueda" role="search" class="flex items-center bg-lole-profundo border border-white/20 rounded-full p-2 focus-within:border-lole-champagne transition-colors shadow-lg">
+                <label for="busqueda" class="sr-only">Buscar productos o servicios en el centro</label>
+                <svg class="w-5 h-5 text-lole-dorado ml-4 mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                </svg>
+                <input 
+                    id="busqueda" 
+                    type="text" 
+                    placeholder="¿Qué necesitas? Ej: nevera, tenis, celular..." 
+                    class="w-full bg-transparent text-lole-blanco placeholder-lole-gris text-sm sm:text-base focus:outline-none pr-4"
+                />
+                <button type="submit" class="bg-lole-dorado hover:bg-lole-bronce text-lole-noche font-semibold px-7 py-2.5 rounded-full text-sm transition-colors shrink-0 cursor-pointer">
+                    Buscar
+                </button>
+            </form>
+        </section>
+       
+        <!-- Botones con atributo data-categoria para leerlos desde JS -->
+        <section aria-label="Filtrar por categoría" class="flex items-center gap-2.5 overflow-x-auto pb-4 mb-4">
+            <span class="text-lole-gris mr-1 shrink-0" title="Categorías">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M7 12h10M10 18h4"/>
+                </svg>
+            </span>
+            <button type="button" data-categoria="Todas" class="categoria-pill activa px-4 py-1.5 rounded-full text-xs sm:text-sm transition-all cursor-pointer shrink-0">Todas</button>
+            <button type="button" data-categoria="Electrodomésticos" class="categoria-pill px-4 py-1.5 rounded-full text-xs sm:text-sm transition-all cursor-pointer shrink-0">Electrodomésticos</button>
+            <button type="button" data-categoria="Tecnología" class="categoria-pill px-4 py-1.5 rounded-full text-xs sm:text-sm transition-all cursor-pointer shrink-0">Tecnología</button>
+            <button type="button" data-categoria="Ropa" class="categoria-pill px-4 py-1.5 rounded-full text-xs sm:text-sm transition-all cursor-pointer shrink-0">Ropa</button>
+            <button type="button" data-categoria="Calzado" class="categoria-pill px-4 py-1.5 rounded-full text-xs sm:text-sm transition-all cursor-pointer shrink-0">Calzado</button>
+            <button type="button" data-categoria="Hogar" class="categoria-pill px-4 py-1.5 rounded-full text-xs sm:text-sm transition-all cursor-pointer shrink-0">Hogar</button>
+            <button type="button" data-categoria="Papelería" class="categoria-pill px-4 py-1.5 rounded-full text-xs sm:text-sm transition-all cursor-pointer shrink-0">Papelería</button>
+            <button type="button" data-categoria="Joyería" class="categoria-pill px-4 py-1.5 rounded-full text-xs sm:text-sm transition-all cursor-pointer shrink-0">Joyería</button>
+        </section>
 
-
-
+        <!-- Lista comercios y mapa-->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+            <!-- Columna Izquierda: lista comercios -->
+            <section class="lg:col-span-5 flex flex-col">
+                <p class="text-sm text-lole-blanco/80 mb-4">
+                    <span id="contador-comercios" class="text-lole-dorado font-bold">0</span> comercios · ordenados por precio-calidad
+                </p>
+                <!-- Contenedor vacío donde JS inyectará las tarjetas -->
+                <div id="lista-comercios" class="space-y-3.5 lg:max-h-[620px] lg:overflow-y-auto lg:pr-2"></div>
+            </section>
+            <!-- Columna Derecha: Mapa-->
+            <section class="lg:col-span-7 sticky top-24">
+                <div class="relative w-full h-[380px] lg:h-[655px] rounded-2xl overflow-hidden border border-white/15 shadow-2xl bg-lole-profundo">
+                    <!-- Contenedor donde Leaflet dibujará el mapa -->
+                    <div id="mapa-medellin" class="w-full h-full z-10"></div>
+                </div>
+            </section>
+        </div>
     </main>
+    <!-- Librería Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- tema claro/oscuro -->
+    <script src="/src/js/theme.js" defer></script>
+    <!-- script de búsqueda -->
+    <script src="/src/js/buscar.js" defer></script>
     
 </body>
 </html>
