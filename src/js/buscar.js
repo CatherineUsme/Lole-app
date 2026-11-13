@@ -104,7 +104,7 @@ let capaMapaBase = null;
 
 // BLOQUE 2: ENCENDER Y CONFIGURAR EL MAPA
 function obtenerUrlCapaMapa() {
-    // Usamos el servidor oficial de OpenStreetMap (siempre gratuito y sin API Key)
+    // Usamos el servidor oficial de Esri (ArcGIS Online)
     return "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}";
 }
 
