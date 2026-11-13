@@ -3,9 +3,393 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <title>Comparar tiendas</title>
+    <!-- Google Fonts: DM Serif Display + Fira Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Fira+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     
+    <link href="/src/output.css" rel="stylesheet">
+</head>
+<body class="bg-lole-noche mx-1">
+    
+    
+    
+      <main>
+
+        <!-- PORTADA -->
+        <section class="relative overflow-hidden border-b border-white/10">
+            <div class="absolute -top-24 -right-16 w-80 h-80 rounded-full bg-lole-dorado/10 blur-3xl"></div>
+            <div class="absolute bottom-0 left-0 w-64 h-64 rounded-full bg-lole-profundo/80 blur-3xl"></div>
+
+            <div class="relative max-w-7xl mx-auto px-6 py-16 md:py-20">
+
+                <span class="inline-flex items-center gap-2 text-lole-dorado text-xs font-semibold uppercase tracking-[0.25em]">
+                    <span class="w-2 h-2 rounded-full bg-lole-dorado"></span>
+                    Guía para elegir mejor
+                </span>
+
+                <div class="max-w-3xl">
+                    <h1 class="font-display text-4xl md:text-6xl text-lole-champagne mt-5 leading-tight">
+                        Compara las tiendas. Elige con confianza.
+                    </h1>
+
+                    <p class="text-lole-blanco/75 text-base md:text-lg mt-5 max-w-2xl leading-relaxed">
+                        Conoce cómo se destacan los comercios del centro de Medellín.
+                        Compara sus precios, calidad y servicios para identificar la opción
+                        que mejor se adapte a lo que necesitas.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-10 max-w-3xl">
+
+                    <div class="border border-white/10 bg-lole-profundo/70 rounded-xl px-4 py-3">
+                        <p class="text-lole-dorado text-sm font-semibold">Precio</p>
+                        <p class="text-lole-blanco/70 text-xs mt-1">Evalúa la conveniencia</p>
+                    </div>
+
+                    <div class="border border-white/10 bg-lole-profundo/70 rounded-xl px-4 py-3">
+                        <p class="text-lole-dorado text-sm font-semibold">Calidad</p>
+                        <p class="text-lole-blanco/70 text-xs mt-1">Compara las valoraciones</p>
+                    </div>
+
+                    <div class="border border-white/10 bg-lole-profundo/70 rounded-xl px-4 py-3">
+                        <p class="text-lole-dorado text-sm font-semibold">Servicios</p>
+                        <p class="text-lole-blanco/70 text-xs mt-1">Identifica beneficios</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- FILTROS POR CATEGORÍA -->
+        <div id="category-filters" class="flex flex-wrap gap-3" aria-label="Categorías de comercios">
+
+                <button type="button" data-filter="todas" aria-pressed="true"
+                    class="filter-button px-5 py-2.5 rounded-full border text-sm font-semibold transition-colors duration-200 bg-lole-dorado text-lole-noche border-lole-dorado hover:border-lole-champagne hover:shadow-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lole-dorado">
+                    Todas
+                </button>
+
+                <button type="button" data-filter="electrodomesticos" aria-pressed="false"
+                    class="filter-button px-5 py-2.5 rounded-full border text-sm font-semibold transition-colors duration-200 bg-transparent text-lole-blanco/80 border-white/20 hover:bg-lole-dorado/10 hover:text-lole-champagne hover:border-lole-dorado focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lole-dorado">
+                    Electrodomésticos
+                </button>
+
+                <button type="button" data-filter="tecnologia" aria-pressed="false"
+                    class="filter-button px-5 py-2.5 rounded-full border text-sm font-semibold transition-colors duration-200 bg-transparent text-lole-blanco/80 border-white/20 hover:bg-lole-dorado/10 hover:text-lole-champagne hover:border-lole-dorado focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lole-dorado">
+                    Tecnología
+                </button>
+
+                <button type="button" data-filter="ropa" aria-pressed="false"
+                    class="filter-button px-5 py-2.5 rounded-full border text-sm font-semibold transition-colors duration-200 bg-transparent text-lole-blanco/80 border-white/20 hover:bg-lole-dorado/10 hover:text-lole-champagne hover:border-lole-dorado focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lole-dorado">
+                    Ropa
+                </button>
+
+                <button type="button" data-filter="calzado" aria-pressed="false"
+                    class="filter-button px-5 py-2.5 rounded-full border text-sm font-semibold transition-colors duration-200 bg-transparent text-lole-blanco/80 border-white/20 hover:bg-lole-dorado/10 hover:text-lole-champagne hover:border-lole-dorado focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lole-dorado">
+                    Calzado
+                </button>
+
+                <button type="button" data-filter="hogar" aria-pressed="false"
+                    class="filter-button px-5 py-2.5 rounded-full border text-sm font-semibold transition-colors duration-200 bg-transparent text-lole-blanco/80 border-white/20 hover:bg-lole-dorado/10 hover:text-lole-champagne hover:border-lole-dorado focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lole-dorado">
+                    Hogar
+                </button>
+
+        </div>
+
+        <!-- RESULTADOS -->
+        <section class="max-w-7xl mx-auto px-6 py-7">
+
+            <div class="flex flex-wrap justify-between items-center gap-3 mb-6">
+                <div>
+                    <h2 class="font-display text-3xl text-lole-champagne">
+                        Tiendas destacadas
+                    </h2>
+
+                    <p class="text-lole-gris text-sm mt-2">
+                        Compara sus características y encuentra tu mejor opción.
+                    </p>
+                </div>
+
+                <span id="results-count" class="text-lole-dorado text-sm" aria-live="polite">
+                    3 comercios encontrados
+                </span>
+            </div>
+
+            <!-- TARJETAS DE COMERCIOS -->
+            <div id="store-list" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
+
+                <!-- TARJETA 1: ELECTRO JUNÍN -->
+                <article
+                    class="store-card flex flex-col bg-lole-profundo/85 border border-lole-champagne/35 rounded-2xl p-6 shadow-lg shadow-black/10 transition-colors duration-200 hover:border-lole-champagne/60"
+                    data-category="electrodomesticos"
+                    data-name="electro junin">
+
+                    <div class="flex items-center justify-between gap-3">
+                        <span class="inline-flex bg-lole-dorado text-lole-noche text-xs font-semibold px-3 py-1 rounded-full">
+                            ★ Mejor opción
+                        </span>
+
+                        <span class="flex items-center gap-1 bg-lole-champagne/10 text-lole-dorado rounded-full px-3 py-1 text-sm font-semibold">
+                            ★ 9.1
+                        </span>
+                    </div>
+
+                    <div class="mt-5">
+                        <h3 class="font-display text-2xl text-lole-champagne">
+                            Electro Junín
+                        </h3>
+
+                        <p class="text-lole-gris text-sm mt-1">
+                            Junín · Medellín
+                        </p>
+                    </div>
+
+                    <div class="space-y-5 mt-7">
+                        <div>
+                            <div class="flex justify-between text-sm mb-2">
+                                <span>Precio</span>
+                                <span class="text-lole-dorado">4.6 / 5</span>
+                            </div>
+
+                            <div class="w-full h-2 bg-white/10 rounded-full">
+                                <div class="h-2 w-[92%] bg-lole-dorado rounded-full"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-sm mb-2">
+                                <span>Calidad</span>
+                                <span class="text-lole-dorado">4.5 / 5</span>
+                            </div>
+
+                            <div class="w-full h-2 bg-white/10 rounded-full">
+                                <div class="h-2 w-[90%] bg-lole-champagne rounded-full"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-white/10 mt-6 pt-5 space-y-4">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-lole-gris">Reseñas</span>
+                            <span>412</span>
+                        </div>
+
+                        <div class="flex justify-between text-sm">
+                            <span class="text-lole-gris">Horario</span>
+                            <span>8:00 – 19:00</span>
+                        </div>
+
+                        <div class="flex justify-between text-sm">
+                            <span class="text-lole-gris">Rango de precios</span>
+                            <span class="text-lole-dorado">$$</span>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2 mt-6">
+                        <span class="text-xs bg-white/10 text-lole-champagne px-3 py-2 rounded-full">
+                            Garantía 1 año
+                        </span>
+
+                        <span class="text-xs bg-white/10 text-lole-champagne px-3 py-2 rounded-full">
+                            Domicilio
+                        </span>
+                    </div>
+
+                    <button type="button"
+                        class="w-full mt-7 py-3 border border-lole-champagne/50 text-lole-champagne rounded-xl font-semibold hover:bg-lole-dorado hover:text-lole-noche transition-colors">
+                        Ver comercio →
+                    </button>
+                </article>
+
+                <!-- TARJETA 2: HOGAR & MÁS -->
+                <article
+                    class="store-card flex flex-col bg-lole-profundo/85 border border-white/10 rounded-2xl p-6 shadow-lg shadow-black/10 transition-colors duration-200 hover:border-lole-champagne/50"
+                    data-category="hogar"
+                    data-name="hogar mas carabobo">
+
+                    <div class="flex items-center justify-between gap-3">
+                        <span class="inline-flex bg-white/10 text-lole-champagne text-xs font-semibold px-3 py-1 rounded-full">
+                            Alternativa destacada
+                        </span>
+
+                        <span class="flex items-center gap-1 bg-lole-champagne/10 text-lole-dorado rounded-full px-3 py-1 text-sm font-semibold">
+                            ★ 8.9
+                        </span>
+                    </div>
+
+                    <div class="mt-5">
+                        <h3 class="font-display text-2xl text-lole-champagne">
+                            Hogar & Más Carabobo
+                        </h3>
+
+                        <p class="text-lole-gris text-sm mt-1">
+                            Carabobo · Medellín
+                        </p>
+                    </div>
+
+                    <div class="space-y-5 mt-7">
+                        <div>
+                            <div class="flex justify-between text-sm mb-2">
+                                <span>Precio</span>
+                                <span class="text-lole-dorado">4.8 / 5</span>
+                            </div>
+
+                            <div class="w-full h-2 bg-white/10 rounded-full">
+                                <div class="h-2 w-[96%] bg-lole-dorado rounded-full"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-sm mb-2">
+                                <span>Calidad</span>
+                                <span class="text-lole-dorado">4.1 / 5</span>
+                            </div>
+
+                            <div class="w-full h-2 bg-white/10 rounded-full">
+                                <div class="h-2 w-[82%] bg-lole-champagne rounded-full"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-white/10 mt-6 pt-5 space-y-4">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-lole-gris">Reseñas</span>
+                            <span>268</span>
+                        </div>
+
+                        <div class="flex justify-between text-sm">
+                            <span class="text-lole-gris">Horario</span>
+                            <span>8:30 – 18:30</span>
+                        </div>
+
+                        <div class="flex justify-between text-sm">
+                            <span class="text-lole-gris">Rango de precios</span>
+                            <span class="text-lole-dorado">$</span>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2 mt-6">
+                        <span class="text-xs bg-white/10 text-lole-champagne px-3 py-2 rounded-full">
+                            Mejor precio
+                        </span>
+
+                        <span class="text-xs bg-white/10 text-lole-champagne px-3 py-2 rounded-full">
+                            Crédito
+                        </span>
+                    </div>
+
+                    <button type="button"
+                        class="w-full mt-7 py-3 border border-lole-champagne/50 text-lole-champagne rounded-xl font-semibold hover:bg-lole-dorado hover:text-lole-noche transition-colors">
+                        Ver comercio →
+                    </button>
+                </article>
+
+                <!-- TARJETA 3: MEGAELÉCTRICOS -->
+                <article
+                    class="store-card flex flex-col bg-lole-profundo/85 border border-white/10 rounded-2xl p-6 shadow-lg shadow-black/10 transition-colors duration-200 hover:border-lole-champagne/50"
+                    data-category="electrodomesticos"
+                    data-name="megaelectricos san juan">
+
+                    <div class="flex items-center justify-between gap-3">
+                        <span class="inline-flex bg-white/10 text-lole-champagne text-xs font-semibold px-3 py-1 rounded-full">
+                            Opción alternativa
+                        </span>
+
+                        <span class="flex items-center gap-1 bg-lole-champagne/10 text-lole-dorado rounded-full px-3 py-1 text-sm font-semibold">
+                            ★ 8.6
+                        </span>
+                    </div>
+
+                    <div class="mt-5">
+                        <h3 class="font-display text-2xl text-lole-champagne">
+                            Megaeléctricos San Juan
+                        </h3>
+
+                        <p class="text-lole-gris text-sm mt-1">
+                            San Juan · Medellín
+                        </p>
+                    </div>
+
+                    <div class="space-y-5 mt-7">
+                        <div>
+                            <div class="flex justify-between text-sm mb-2">
+                                <span>Precio</span>
+                                <span class="text-lole-dorado">3.9 / 5</span>
+                            </div>
+
+                            <div class="w-full h-2 bg-white/10 rounded-full">
+                                <div class="h-2 w-[78%] bg-lole-dorado rounded-full"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-sm mb-2">
+                                <span>Calidad</span>
+                                <span class="text-lole-dorado">4.7 / 5</span>
+                            </div>
+
+                            <div class="w-full h-2 bg-white/10 rounded-full">
+                                <div class="h-2 w-[94%] bg-lole-champagne rounded-full"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-white/10 mt-6 pt-5 space-y-4">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-lole-gris">Reseñas</span>
+                            <span>190</span>
+                        </div>
+
+                        <div class="flex justify-between text-sm">
+                            <span class="text-lole-gris">Horario</span>
+                            <span>9:00 – 19:00</span>
+                        </div>
+
+                        <div class="flex justify-between text-sm">
+                            <span class="text-lole-gris">Rango de precios</span>
+                            <span class="text-lole-dorado">$$$</span>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2 mt-6">
+                        <span class="text-xs bg-white/10 text-lole-champagne px-3 py-2 rounded-full">
+                            Alta gama
+                        </span>
+
+                        <span class="text-xs bg-white/10 text-lole-champagne px-3 py-2 rounded-full">
+                            Instalación
+                        </span>
+                    </div>
+
+                    <button type="button"
+                        class="w-full mt-7 py-3 border border-lole-champagne/50 text-lole-champagne rounded-xl font-semibold hover:bg-lole-dorado hover:text-lole-noche transition-colors">
+                        Ver comercio →
+                    </button>
+                </article>
+
+            </div>
+
+            <!-- MENSAJE CUANDO NO HAY RESULTADOS -->
+            <p id="no-results" class="hidden text-center text-lole-gris py-12" aria-live="polite">
+                Todavía no hay comercios registrados en esta categoría.
+            </p>
+
+        </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="border-t border-white/10 mt-12 py-8 text-center">
+        <p class="text-lole-gris text-sm">
+            © 2026 Lole-App · Hecho en Medellín.
+        </p>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="../src/js/theme.js" defer></script>
+    <script src="../src/js/comparar.js" defer></script>
+
+
 </body>
 </html>

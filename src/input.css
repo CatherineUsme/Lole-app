@@ -38,3 +38,22 @@ html.light-mode {
 #tiendas-track::-webkit-scrollbar {
     display: none;
 }
+
+@layer components {
+
+    .filter-button {
+        @apply px-4 py-2 rounded-full
+        border border-white/20
+        text-sm text-lole-blanco
+        transition-all duration-300
+        hover:border-lole-champagne
+        hover:text-lole-champagne;
+    }
+
+    .active-filter {
+        @apply bg-lole-dorado
+        border-lole-dorado
+        text-lole-noche;
+    }
+
+}
