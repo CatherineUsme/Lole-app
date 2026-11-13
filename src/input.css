@@ -28,6 +28,7 @@ html.light-mode {
     --color-lole-champagne: #0C2448;
 }
 
+/* Index: barra desplazamiento carrusel */
 /* Ocultar la barra de desplazamiento del carrusel */
 #tiendas-track {
     scrollbar-width: none; /* Firefox */
@@ -57,6 +58,7 @@ html.light-mode {
     }
 
 }
+
 /* Pagina buscar: botones categoria */
 /* Botones categoria normal */
 .categoria-pill {
@@ -100,4 +102,69 @@ html.light-mode {
 /* Cuando pasas el mouse sobre la barra */
 #lista-comercios::-webkit-scrollbar-thumb:hover {
     background: var(--color-lole-dorado);
+}
+
+/* Pagina Buscar: pines mapa*/
+/* Mobile first */
+.lole-pin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 9999px; /*convierte el cuadrado en circulo*/
+    background-color: var(--color-lole-profundo);
+    border: 2px solid var(--color-lole-champagne);
+    color: var(--color-lole-blanco);
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    cursor: pointer;
+    user-select: none; 
+}
+
+/* Pantallas grandes */
+@media (min-width: 768px) {
+    .lole-pin {
+        width: 34px;
+        height: 34px;
+        font-size: 13px;
+    }
+}
+
+/* Estados de interacción:
+   - :active -> funciona en el toque del celular
+   - :hover  -> funciona con el mouse en PC
+   - .seleccionado -> estado persistente controlado por JS */
+.lole-pin:active,
+.lole-pin:hover,
+.lole-pin.seleccionado {
+    background-color: var(--color-lole-dorado);
+    color: #06162F;
+    border-color: #FFFFFF;
+    transform: scale(1.15);
+    z-index: 1000 !important; /*sube el pin seleccionado por encima de los otros pines*/
+}
+
+/*globo informacion pin*/
+.leaflet-popup-content-wrapper, /*caja rectanguar*/
+.leaflet-popup-tip { /*triangulo inferior*/
+    background-color: var(--color-lole-profundo) !important;
+    color: var(--color-lole-blanco) !important;
+    border: 1px solid var(--color-lole-champagne);
+    border-radius: 1rem !important;
+}
+
+
+/* Pagina Buscar: filtro  mapa*/
+/* Filtro modo noche para los mosaicos gratuitos de OpenStreetMap */
+.leaflet-tile-pane {
+    filter: invert(100%) hue-rotate(195deg) brightness(88%) contrast(95%) saturate(85%);
+}
+
+/* Cuando se activa el modo claro (theme.js), el mapa vuelve a sus colores originales */
+html.light-mode .leaflet-tile-pane {
+    filter: none;
 }
