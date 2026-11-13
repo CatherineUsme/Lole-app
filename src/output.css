@@ -775,6 +775,12 @@
   .bg-lole-champagne {
     background-color: var(--color-lole-champagne);
   }
+  .bg-lole-champagne\/5 {
+    background-color: color-mix(in srgb, #E5BF85 5%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-lole-champagne) 5%, transparent);
+    }
+  }
   .bg-lole-champagne\/10 {
     background-color: color-mix(in srgb, #E5BF85 10%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -810,6 +816,12 @@
   }
   .bg-lole-dorado {
     background-color: var(--color-lole-dorado);
+  }
+  .bg-lole-dorado\/15 {
+    background-color: color-mix(in srgb, #EFAD4D 15%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-lole-dorado) 15%, transparent);
+    }
   }
   .bg-lole-noche {
     background-color: var(--color-lole-noche);
@@ -1230,6 +1242,12 @@
     --tw-shadow-color: color-mix(in srgb, #E5BF85 10%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, var(--color-lole-champagne) 10%, transparent) var(--tw-shadow-alpha), transparent);
+    }
+  }
+  .shadow-lole-champagne\/20 {
+    --tw-shadow-color: color-mix(in srgb, #E5BF85 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, var(--color-lole-champagne) 20%, transparent) var(--tw-shadow-alpha), transparent);
     }
   }
   .shadow-lole-dorado {

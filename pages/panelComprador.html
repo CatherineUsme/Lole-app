@@ -9,11 +9,19 @@
 <body class="text-lole-blanco min-h-screen bg-lole-noche font-body selection:bg-lole-champagne">
     <main>
         <header class="border-b border-lole-dorado/40 bg-linear-to-r from-lole-profundo/80 to-transparent">
-            <div class="px-6 py-12 max-w-7xl mx-auto">
-                <p class="text-xs mb-3 text-lole-champagne font-medium uppercase tracking-[0.25em]">PANEL DEL COMPRADOR</p>
-                <h1 class="font-display font-bold text-4xl md:text-5xl text-lole-champagne mb-3">Hola, Sara</h1>
-                <p class="mt-3 max-w-2xl text-base sm:text-lg text-lole-gris/80 font-body mb-8 leading-relaxed">Tus pedidos y lugares favoritos del centro.</p>
+            <div class="px-6 py-12 max-w-7xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+                <div>
+                    <p class="text-xs mb-3 text-lole-champagne font-medium uppercase tracking-[0.25em]">PANEL DEL COMPRADOR</p>
+                    <h1 class="font-display font-bold text-4xl md:text-5xl text-lole-champagne mb-3">Hola, Sara</h1>
+                    <p class="mt-3 max-w-2xl text-base sm:text-lg text-lole-gris/80 font-body mb-8 leading-relaxed">Tus pedidos y lugares favoritos del centro.</p>
+                </div>
+                <div class="shrink-0">
+                    <a href="panelComerciante.html" class="bg-lole-champagne text-lole-noche font-semibold text-xs sm:text-sm px-6 py-2.5 rounded-full hover:opacity-90 transition shadow-lg shadow-lole-champagne/20 inline-flex items-center gap-2">
+                        Soy comerciante
+                    </a>
+                </div>
             </div>
+            
         </header>
 
         <section class="max-w-7xl mx-auto px-6 py-12">
@@ -157,20 +165,20 @@
                             <h3 class="text-sm font-semibold text-white flex items-center gap-1.5">
                                 Electro Junín
                                 <!-- Ícono de verificado -->
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4 text-lole-champagne">
-                                    <path fill-rule="evenodd" d="M15 8c0 .982-.472 1.854-1.202 2.402a2.995 2.995 0 0 1-.848 2.547..."/>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4 text-lole-champagne shrink-0">
+                                    <path fill-rule="evenodd" d="M15 8c0 .982-.472 1.854-1.202 2.402a2.995 2.995 0 0 1-.848 2.547 2.995 2.995 0 0 1-2.548.849A2.996 2.996 0 0 1 8 15a2.996 2.996 0 0 1-2.402-1.202 2.995 2.995 0 0 1-2.547-.848 2.995 2.995 0 0 1-.849-2.548A2.996 2.996 0 0 1 1 8c0-.982.472-1.854 1.202-2.402a2.995 2.995 0 0 1 .848-2.547 2.995 2.995 0 0 1 2.548-.849A2.995 2.995 0 0 1 8 1c.982 0 1.854.472 2.402 1.202a2.995 2.995 0 0 1 2.547.848c.695.695.978 1.645.849 2.548A2.996 2.996 0 0 1 15 8Zm-3.291-2.843a.75.75 0 0 1 .135 1.052l-4.25 5.5a.75.75 0 0 1-1.151.043l-2.25-2.5a.75.75 0 1 1 1.114-1.004l1.65 1.832 3.7-4.789a.75.75 0 0 1 1.052-.134Z" clip-rule="evenodd" />
                                 </svg>
                             </h3>
                             <!-- Puntuación -->
-                            <span class="bg-lole-champagne/15 text-lole-champagne text-xs font-bold px-2.5 py-1 rounded-full flex items-center gap-1">
+                            <span class="bg-lole-champagne/15 text-lole-dorado text-xs font-bold px-2.5 py-1 rounded-full flex items-center gap-1 shrink-0">
                                 ★ 9.1
                             </span>
                         </div>
 
                         <!-- Dirección -->
                         <p class="text-xs text-lole-gris flex items-center gap-1 mb-6">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-3.5 h-3.5">
-                                <path fill-rule="evenodd" d="m9.69 18.933..."/>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-3.5 h-3.5 shrink-0">
+                                <path fill-rule="evenodd" d="m9.69 18.933.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 0 0 .281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C15.302 14.988 17 12.493 17 9A7 7 0 1 0 3 9c0 3.492 1.698 5.988 3.355 7.584a13.731 13.731 0 0 0 2.273 1.765 11.842 11.842 0 0 0 .976.544l.062.029.018.008.006.003ZM10 11.25a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z" clip-rule="evenodd" />
                             </svg>
                             Cra. 49 #52-30 · Junín
                         </p>
@@ -178,9 +186,9 @@
 
                     <!-- Etiquetas inferiores (Tags) -->
                     <div class="flex flex-wrap gap-2">
-                        <span class="bg-white/5 border border-white/10 px-3 py-1 rounded-full text-xs text-lole-champagne font-medium">$$</span>
-                        <span class="bg-white/5 border border-white/10 px-3 py-1 rounded-full text-xs text-lole-gris">Garantía 1 año</span>
-                        <span class="bg-white/5 border border-white/10 px-3 py-1 rounded-full text-xs text-lole-gris">Domicilio</span>
+                        <span class="bg-lole-champagne/15 bg-white/5 border border-white/10 px-3 py-1 rounded-full text-xs text-lole-dorado font-medium">$$</span>
+                        <span class="bg-lole-champagne/15 bg-white/5 border border-white/10 px-3 py-1 rounded-full text-xs text-lole-dorado">Garantía 1 año</span>
+                        <span class="bg-lole-champagne/15 bg-white/5 border border-white/10 px-3 py-1 rounded-full text-xs text-lole-dorado">Domicilio</span>
                     </div>
                 </article>
 
@@ -190,25 +198,25 @@
                         <div class="flex items-start justify-between mb-2">
                             <h3 class="text-sm font-semibold text-white flex items-center gap-1.5">
                                 Hogar & Más Carabobo
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4 text-lole-champagne">
-                                    <path fill-rule="evenodd" d="M15 8c0 .982..."/>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4 text-lole-champagne shrink-0">
+                                    <path fill-rule="evenodd" d="M15 8c0 .982-.472 1.854-1.202 2.402a2.995 2.995 0 0 1-.848 2.547 2.995 2.995 0 0 1-2.548.849A2.996 2.996 0 0 1 8 15a2.996 2.996 0 0 1-2.402-1.202 2.995 2.995 0 0 1-2.547-.848 2.995 2.995 0 0 1-.849-2.548A2.996 2.996 0 0 1 1 8c0-.982.472-1.854 1.202-2.402a2.995 2.995 0 0 1 .848-2.547 2.995 2.995 0 0 1 2.548-.849A2.995 2.995 0 0 1 8 1c.982 0 1.854.472 2.402 1.202a2.995 2.995 0 0 1 2.547.848c.695.695.978 1.645.849 2.548A2.996 2.996 0 0 1 15 8Zm-3.291-2.843a.75.75 0 0 1 .135 1.052l-4.25 5.5a.75.75 0 0 1-1.151.043l-2.25-2.5a.75.75 0 1 1 1.114-1.004l1.65 1.832 3.7-4.789a.75.75 0 0 1 1.052-.134Z" clip-rule="evenodd" />
                                 </svg>
                             </h3>
-                            <span class="bg-lole-champagne/15 text-lole-champagne text-xs font-bold px-2.5 py-1 rounded-full flex items-center gap-1">
+                            <span class="bg-lole-champagne/15 text-lole-dorado text-xs font-bold px-2.5 py-1 rounded-full flex items-center gap-1 shrink-0">
                                 ★ 8.9
                             </span>
                         </div>
                         <p class="text-xs text-lole-gris flex items-center gap-1 mb-6">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-3.5 h-3.5">
-                                <path fill-rule="evenodd" d="m9.69 18.933..."/>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-3.5 h-3.5 shrink-0">
+                                <path fill-rule="evenodd" d="m9.69 18.933.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 0 0 .281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C15.302 14.988 17 12.493 17 9A7 7 0 1 0 3 9c0 3.492 1.698 5.988 3.355 7.584a13.731 13.731 0 0 0 2.273 1.765 11.842 11.842 0 0 0 .976.544l.062.029.018.008.006.003ZM10 11.25a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z" clip-rule="evenodd" />
                             </svg>
                             Cra. 52 #50-12 · Carabobo
                         </p>
                     </div>
                     <div class="flex flex-wrap gap-2">
-                        <span class="bg-white/5 border border-white/10 px-3 py-1 rounded-full text-xs text-lole-champagne font-medium">$</span>
-                        <span class="bg-white/5 border border-white/10 px-3 py-1 rounded-full text-xs text-lole-gris">Mejor precio</span>
-                        <span class="bg-white/5 border border-white/10 px-3 py-1 rounded-full text-xs text-lole-gris">Crédito</span>
+                        <span class="bg-lole-champagne/15 bg-white/5 border border-white/10 px-3 py-1 rounded-full text-xs text-lole-dorado font-medium">$</span>
+                        <span class="bg-lole-champagne/15 bg-white/5 border border-white/10 px-3 py-1 rounded-full text-xs text-lole-dorado">Mejor precio</span>
+                        <span class="bg-lole-champagne/15 bg-white/5 border border-white/10 px-3 py-1 rounded-full text-xs text-lole-dorado">Crédito</span>
                     </div>
                 </article>
 
@@ -218,25 +226,25 @@
                         <div class="flex items-start justify-between mb-2">
                             <h3 class="text-sm font-semibold text-white flex items-center gap-1.5">
                                 Megaeléctricos San Juan
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4 text-lole-champagne">
-                                    <path fill-rule="evenodd" d="M15 8c0 .982..."/>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4 text-lole-champagne shrink-0">
+                                    <path fill-rule="evenodd" d="M15 8c0 .982-.472 1.854-1.202 2.402a2.995 2.995 0 0 1-.848 2.547 2.995 2.995 0 0 1-2.548.849A2.996 2.996 0 0 1 8 15a2.996 2.996 0 0 1-2.402-1.202 2.995 2.995 0 0 1-2.547-.848 2.995 2.995 0 0 1-.849-2.548A2.996 2.996 0 0 1 1 8c0-.982.472-1.854 1.202-2.402a2.995 2.995 0 0 1 .848-2.547 2.995 2.995 0 0 1 2.548-.849A2.995 2.995 0 0 1 8 1c.982 0 1.854.472 2.402 1.202a2.995 2.995 0 0 1 2.547.848c.695.695.978 1.645.849 2.548A2.996 2.996 0 0 1 15 8Zm-3.291-2.843a.75.75 0 0 1 .135 1.052l-4.25 5.5a.75.75 0 0 1-1.151.043l-2.25-2.5a.75.75 0 1 1 1.114-1.004l1.65 1.832 3.7-4.789a.75.75 0 0 1 1.052-.134Z" clip-rule="evenodd" />
                                 </svg>
                             </h3>
-                            <span class="bg-lole-champagne/15 text-lole-champagne text-xs font-bold px-2.5 py-1 rounded-full flex items-center gap-1">
+                            <span class="bg-lole-champagne/15 text-lole-champagne text-xs font-bold px-2.5 py-1 rounded-full flex items-center gap-1 shrink-0">
                                 ★ 8.6
                             </span>
                         </div>
                         <p class="text-xs text-lole-gris flex items-center gap-1 mb-6">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-3.5 h-3.5">
-                                <path fill-rule="evenodd" d="m9.69 18.933..."/>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-3.5 h-3.5 shrink-0">
+                                <path fill-rule="evenodd" d="m9.69 18.933.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 0 0 .281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C15.302 14.988 17 12.493 17 9A7 7 0 1 0 3 9c0 3.492 1.698 5.988 3.355 7.584a13.731 13.731 0 0 0 2.273 1.765 11.842 11.842 0 0 0 .976.544l.062.029.018.008.006.003ZM10 11.25a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z" clip-rule="evenodd" />
                             </svg>
                             Cl. 44 #51-20 · San Juan
                         </p>
                     </div>
                     <div class="flex flex-wrap gap-2">
-                        <span class="bg-white/5 border border-white/10 px-3 py-1 rounded-full text-xs text-lole-champagne font-medium">$$$</span>
-                        <span class="bg-white/5 border border-white/10 px-3 py-1 rounded-full text-xs text-lole-gris">Alta gama</span>
-                        <span class="bg-white/5 border border-white/10 px-3 py-1 rounded-full text-xs text-lole-gris">Instalación</span>
+                        <span class="bg-lole-champagne/15 bg-white/5 border border-white/10 px-3 py-1 rounded-full text-xs text-lole-dorado font-medium">$$$</span>
+                        <span class="bg-lole-champagne/15 bg-white/5 border border-white/10 px-3 py-1 rounded-full text-xs text-lole-dorado">Alta gama</span>
+                        <span class="bg-lole-champagne/15 bg-white/5 border border-white/10 px-3 py-1 rounded-full text-xs text-lole-dorado">Instalación</span>
                     </div>
                 </article>
             </div>
