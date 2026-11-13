@@ -38,3 +38,66 @@ html.light-mode {
 #tiendas-track::-webkit-scrollbar {
     display: none;
 }
+
+@layer components {
+
+    .filter-button {
+        @apply px-4 py-2 rounded-full
+        border border-white/20
+        text-sm text-lole-blanco
+        transition-all duration-300
+        hover:border-lole-champagne
+        hover:text-lole-champagne;
+    }
+
+    .active-filter {
+        @apply bg-lole-dorado
+        border-lole-dorado
+        text-lole-noche;
+    }
+
+}
+/* Pagina buscar: botones categoria */
+/* Botones categoria normal */
+.categoria-pill {
+    background-color: var(--color-lole-profundo);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: var(--color-lole-blanco);
+}
+
+/* Botones categoria hoover  */
+.categoria-pill:hover {
+    border-color: var(--color-lole-champagne);
+    color: var(--color-lole-champagne);
+}
+
+/* Botones categoria activa */
+.categoria-pill.activa {
+    background-color: color-mix(in srgb, var(--color-lole-dorado) 15%, transparent);
+    border-color: var(--color-lole-dorado);
+    color: var(--color-lole-dorado);
+    font-weight: 600;
+}
+
+
+/* Pagina Buscar: barra de desplazamiento */
+/* Ancho total de la barra vertical */
+#lista-comercios::-webkit-scrollbar { /*pseudo elemento que controla la apariencia del scroll*/
+    width: 6px;
+}
+
+/* El carril o fondo por donde se desliza la barra */
+#lista-comercios::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* La pieza móvil que arrastras con el mouse */
+#lista-comercios::-webkit-scrollbar-thumb {
+    background: rgba(229, 191, 133, 0.25); /* Champagne al 25% */
+    border-radius: 9999px;
+}
+
+/* Cuando pasas el mouse sobre la barra */
+#lista-comercios::-webkit-scrollbar-thumb:hover {
+    background: var(--color-lole-dorado);
+}
